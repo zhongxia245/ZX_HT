@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Validation Engine 表单验证中文版 &raquo; 在线演示 &raquo; 验证通过后自定义行为 - 前端开发仓库</title>
+<link rel="stylesheet" href="../css/validationEngine.jquery.css">
+<link rel="stylesheet" href="../css/template.css">
+<script src="../js/jquery-1.6.min.js"></script>
+<script src="../js/jquery.validationEngine.min.js"></script>
+<script>
+jQuery(document).ready(function(){
+	jQuery("#formID2").validationEngine('attach', {
+		onValidationComplete: function(form, status){
+			alert("The form status is: " +status+", it will never submit");
+		}  
+	})
+});
+</script>
+</head>
+<body>
+<p class="demo_bar"><a href="../index.html">返回首页</a></p>
+
+<div class="demo_wrap">
+	<div class="demo_tips">
+		<p>示例：onValidationComplete 停止表单的提交，自定义处理行为。</p>
+	</div>
+	
+	<form id="formID2" class="formular" method="post" action="#">
+		<fieldset>
+			<legend>Phone</legend>
+			<p>+103-304-340-4300-043</p>
+			<p>+1 305 768 23 34 ext 23</p>
+			<p>+1 (305) 768-2334 extension 703</p>
+			<p>+1 (305) 768-2334 x703</p>
+			<p>04312 / 777 777</p>
+			<p>01-47.34/32 56</p>
+			<p>(01865)  123456</p>
+			<label for="telephone">电话号码：（可选）</label>
+			<input value="+1 305 768 23 34 ext 23 BUG" class="validate[required,custom[phone]] text-input" type="text" name="telephone" id="telephone" />
+		</fieldset>
+
+		<fieldset>
+			<legend>OnlyLetter</legend>
+			<p>只接受英文字母（大小写）、空格和单引号(')</p>
+			<input value="this is an invalid char '.'" class="validate[required,custom[onlyLetterSp]] text-input" type="text" name="onlyascii" id="onlyascii" />
+		</fieldset>
+
+		<input class="submit" type="submit" value="验证 & 提交表单"/>
+	</form>
+</div>
+</body>
+</html>

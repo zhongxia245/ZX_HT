@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Validation Engine 表单验证中文版 &raquo; 在线演示 &raquo; 自定义每个控件的提示层位置 - 前端开发仓库</title>
+<link rel="stylesheet" href="../css/validationEngine.jquery.css">
+<link rel="stylesheet" href="../css/template.css">
+<script src="../js/jquery-1.6.min.js"></script>
+<script src="../js/jquery.validationEngine.min.js"></script>
+<script>
+jQuery(document).ready(function(){
+	// binds form submission and fields to the validation engine
+	jQuery("#formID").validationEngine();
+});
+</script>
+</head>
+<body>
+<p class="demo_bar"><a href="../index.html">返回首页</a></p>
+
+<div class="demo_wrap">
+	<div class="demo_tips">
+		<p>示例：演示对单个控件设定不同的提示层位置（data-prompt-position）。</p>
+	</div>
+
+	<form id="formID" class="formular" method="post" action="">
+		<fieldset>
+			<legend>Required</legend>
+			<label for="req">必填项目：</label>
+			<input value="" class="validate[required] text-input" type="text" name="req" id="req" />
+	
+			<label for="sport">最喜欢的运动 1：</label>
+			<select name="sport" id="sport" class="validate[required]">
+				<option value="">请选择</option>
+				<option value="option1">网球</option>
+				<option value="option2">足球</option>
+				<option value="option3">高尔夫球</option>
+			</select>
+	
+			<label for="sport2">最喜欢的运动 2：</label>
+			<select name="sport2" id="sport2" multiple class="validate[required]">
+				<option value="">请选择</option>
+				<option value="option1">网球</option>
+				<option value="option2">足球</option>
+				<option value="option3">高尔夫球</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Custom</legend>
+			<p>自定的正则验证（电话、URL、IP、Email 等）<a href="demoRegExp.html">[更多示例]</a></p>
+			<label for="url">输入 URL 地址：</label>
+			<input value="http://" class="validate[required,custom[url]] text-input" type="text" name="url" id="url" data-prompt-position="topLeft" />
+		</fieldset>
+
+		<input class="submit" type="submit" value="验证 & 提交表单"/>
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugin/easyui/jquery.easyui.min.js"></script>
+</head>
+
+<body>
+    <table id="dg"></table>
+    <div id="tb_edit"></div>
+    <script type="text/javascript">
+    window.startTime = new Date().getTime();
+    </script>
+    <script type="text/javascript" src="../assets/js/zhongxia/zx_ALL.js"></script>
+    <script type="text/javascript">
+    window.endTime = new Date().getTime();
+    alert("耗时:" + (endTime - startTime));
+    $(document).ready(function($) {
+        zx_ALL.init();
+    });
+    </script>
+</body>
+
+</html>

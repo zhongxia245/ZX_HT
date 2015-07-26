@@ -1,0 +1,50 @@
+﻿{
+            "prefixId": "item",
+            "data": [{
+                "title": "表格生成",
+                "children": [{
+                    "title": "测试表1",
+                    "fontIcon": "&#xe005;",
+                    "url": "TableDemo.html?TCID=1"
+                }, {
+                    "title": "分类管理",
+                    "fontIcon": "&#xe006;",
+                    "url": "TableDemo.html?TCID=12"
+                }, {
+                    "title": "留言管理",
+                    "fontIcon": "&#xe004;",
+                    "url": "TableDemo.html?TCID=3"
+                }, {
+                    "title": "评论管理",
+                    "fontIcon": "&#xe012;",
+                    "url": "InitEditPage.html"
+                },{
+                    "title": "主表管理4",
+                    "fontIcon": "&#xe008;",
+                    "url": "TableDemo.html?TCID=4"
+                },{
+                    "title": "附表管理5",
+                    "fontIcon": "&#xe008;",
+                    "url": "TableDemo.html?TCID=5"
+                }]
+            }, {
+                "title": "系统管理",
+                "children": [{
+                    "title": "系统设置",
+                    "fontIcon": "&#xe017;",
+                    "url": "design.html"
+                }, {
+                    "title": "清理缓存",
+                    "fontIcon": "&#xe037;",
+                    "url": "design.html"
+                }, {
+                    "title": "数据备份",
+                    "fontIcon": "&#xe046;",
+                    "url": "design.html"
+                }, {
+                    "title": "数据还原",
+                    "fontIcon": "&#xe045;",
+                    "url": "design.html"
+                }]
+            }]
+        }

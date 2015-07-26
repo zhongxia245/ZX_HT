@@ -1,0 +1,74 @@
+{
+	"1": {
+		"id": "#table",
+		"url": "../data/objects.txt",
+		"columns": [
+			{
+				"text": "名称",
+				"data": "name"
+			},
+			{
+				"text": "位置",
+				"data": "position"
+			},
+			{
+				"text": "办公室",
+				"data": "office"
+			},
+			{
+				"text": "不懂",
+				"data": "extn"
+			}
+		]
+	},
+	"2": {
+		"id": "#table",
+		"url": "../data/objects.txt",
+		"columns": [
+			{
+				"text": "名称",
+				"data": "name"
+			},
+			{
+				"text": "位置",
+				"data": "position"
+			},
+			{
+				"text": "办公室",
+				"data": "office"
+			}
+		]
+	},
+	"3": {
+		"id": "#table",
+		"url": "../data/objects.txt",
+		"columns": [
+			{
+				"text": "名称",
+				"data": "name"
+			},
+			{
+				"text": "位置",
+				"data": "position"
+			}
+		]
+	},
+	"4": {
+		"id": "#table",
+		"url": "../data/data1.txt",
+		"columns": [
+			{
+				"text": "编号",
+				"data": "id"
+			},
+			{
+				"text": "名称",
+				"data": "name"
+			},
+			{
+				"text": "年龄",
+				"data": "age"
+			}
+		]
+	}
+}

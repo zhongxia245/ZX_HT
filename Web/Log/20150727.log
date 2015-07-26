@@ -1,0 +1,281 @@
+************************************begin***********************************
+2015-07-27 00:21:09,331 [12184] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 107
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 00:21:17,073 [5912] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 107
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 00:23:48,812 [12184] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 107
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 00:23:55,825 [14824] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 107
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 00:24:06,376 [11880] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 00:24:16,807 [11140] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 107
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 00:24:57,592 [11400] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 107
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 00:25:07,968 [11880] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 107
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 00:25:20,548 [13816] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 113
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:b46d66b2-7c6e-46ce-a2a9-471caa2a7846
+************************************begin***********************************
+2015-07-27 00:25:52,369 [14236] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 113
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:9efd1f95-4cf7-45a9-ba53-3946ef60bfd8
+************************************begin***********************************
+2015-07-27 00:25:58,445 [5764] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 107
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 00:26:07,206 [5764] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 107
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 00:26:13,393 [11880] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 113
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:a71e2270-8c8e-450f-b8ac-6760426b2b2b
+************************************begin***********************************
+2015-07-27 00:26:15,674 [15208] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 113
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:a71e2270-8c8e-450f-b8ac-6760426b2b2b
+************************************begin***********************************
+2015-07-27 00:26:17,637 [13816] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 113
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:a71e2270-8c8e-450f-b8ac-6760426b2b2b
+************************************begin***********************************
+2015-07-27 00:26:21,085 [14868] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 113
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:a71e2270-8c8e-450f-b8ac-6760426b2b2b
+************************************begin***********************************
+2015-07-27 00:26:37,246 [5764] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 107
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 00:26:52,145 [5764] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 107
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 00:27:02,382 [10180] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.FormatException: 输入字符串的格式不正确。
+   在 System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 107
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 00:28:15,787 [10180] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 113
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:2d41b69d-6ab6-48e1-8504-a6729e70fd4b
+************************************begin***********************************
+2015-07-27 00:34:05,656 [14436] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 112
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:878cf424-91b9-4ad0-8685-66b33ba8577e
+************************************begin***********************************
+2015-07-27 00:43:02,164 [14888] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): 必须声明表变量 "@param0"。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteReader()
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.RunQueryForObject(RequestScope request, ISqlMapSession session, Object parameterObject, Object resultObject)
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteQueryForObject(ISqlMapSession session, Object parameterObject, Object resultObject)
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteQueryForObject(ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.QueryForObject(String statementName, Object parameterObject)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetSingle(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 115
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:f8f73302-8521-443e-afbb-ad2b0e7166e7
+************************************begin***********************************
+2015-07-27 00:44:45,854 [14888] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): 关键字 'ROWCOUNT' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader()
+   在 IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteReader()
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.RunQueryForObject(RequestScope request, ISqlMapSession session, Object parameterObject, Object resultObject)
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteQueryForObject(ISqlMapSession session, Object parameterObject, Object resultObject)
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteQueryForObject(ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.QueryForObject(String statementName, Object parameterObject)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetSingle(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 116
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:642f4801-094a-4d0c-bbd1-ba30e65161ed
+************************************begin***********************************
+2015-07-27 00:45:19,477 [14888] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): 关键字 'ROWCOUNT' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 116
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 F:\库\Desktop\通用后台维护\SVN完整版\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:d5ed59fd-16be-45a1-bd0a-2d53cb4ccf60

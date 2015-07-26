@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap  namespace="Common"  xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <statements>
+    <!--分页获取数据-->
+    <select id="Select">
+      <![CDATA[
+          SELECT * FROM (
+          SELECT ROW_NUMBER( )OVER (ORDER BY a.ID) AS ROWID ,* 
+          FROM ( $SQL$ )  a ) b
+          WHERE b.ROWID BETWEEN #STARTNUM# AND #ENDNUM#
+        ]]>
+    </select>
+
+    <!--获取表的数据条数-->
+    <select id="GetTbCount">
+      <![CDATA[
+          SELECT COUNT(1) FROM $TBCODE$
+        ]]>
+    </select>
+  </statements>
+</sqlMap>

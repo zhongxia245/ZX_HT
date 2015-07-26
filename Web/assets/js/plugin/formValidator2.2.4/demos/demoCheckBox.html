@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Validation Engine 表单验证中文版 &raquo; 在线演示 &raquo; 单选、多选框验证 - 前端开发仓库</title>
+<link rel="stylesheet" href="../css/validationEngine.jquery.css">
+<link rel="stylesheet" href="../css/template.css">
+<script src="../js/jquery-1.6.min.js"></script>
+<script src="../js/jquery.validationEngine.min.js"></script>
+<script>
+jQuery(document).ready(function(){
+	// binds form submission and fields to the validation engine
+	jQuery("#formID").validationEngine();
+});
+</script>
+</head>
+<body>
+<p class="demo_bar">
+	<a href="javascript://" onclick="alert('is the form valid? '+jQuery('#formID').validationEngine('validate'))">验证表单</a>
+	<a href="javascript://" onclick="jQuery('#formID').validationEngine('showPrompt', 'This is an example', 'pass')">给表单创建成功提示</a>
+	<a href="javascript://" onclick="jQuery('#formID').validationEngine('hide')">关闭表单中的所有提示</a>
+	<a href="../index.html">返回首页</a>
+</p>
+
+<div class="demo_wrap">
+	<div class="demo_tips">
+		<p>示例：演示单选框和复选框的验证</p>
+	</div>
+
+	<form id="formID" class="formular" method="post" action="">
+		<fieldset>
+			<legend>单选、复选框</legend>
+			<p>单选框群组：</p>
+			<label>选项 1：<input class="validate[required] radio" type="radio" name="group0" id="radio1" value="5"/></label>
+			<label>选项 2：<input class="validate[required] radio" type="radio" name="group0" id="radio2" value="3"/></label>
+			<label>选项 3：<input class="validate[required] radio" type="radio" name="group0" id="radio3" value="9"/></label>
+		</fieldset>
+
+		<fieldset>
+			<p>至少选择2个复选框：</p>
+			<label>选项 1：<input class="validate[minCheckbox[2]] checkbox" type="checkbox" name="group1" id="maxcheck1" value="5"/></label>
+			<label>选项 2：<input class="validate[minCheckbox[2]] checkbox" type="checkbox" name="group1" id="maxcheck2" value="3"/></label>
+			<label>选项 3：<input class="validate[minCheckbox[2]] checkbox" type="checkbox" name="group1" id="maxcheck3" value="9"/></label>
+		</fieldset>
+
+		<fieldset>
+			<p><strong>最多</strong>选择2个复选框：</p>
+			<label>选项 1：<input class="validate[maxCheckbox[2]] checkbox" type="checkbox" name="group2" id="maxcheck4" value="5"/></label>
+			<label>选项 2：<input class="validate[maxCheckbox[2]] checkbox" type="checkbox" name="group2" id="maxcheck5" value="3"/></label>
+			<label>选项 3：<input class="validate[maxCheckbox[2]] checkbox" type="checkbox" name="group2" id="maxcheck6" value="9"/></label>
+		</fieldset>
+	
+		<fieldset>
+			<legend>协议</legend>
+			<div class="infos">勾选此框表明你接受使用条款。如果不接受这些条款，不要使用本网站。</div>
+			<label>我同意这个协议：<input class="validate[required] checkbox" type="checkbox" id="agree" name="agree"/></label>
+		</fieldset>
+
+		<input class="submit" type="submit" value="验证 & 提交表单"/>
+	</form>
+</div>
+</body>
+</html>

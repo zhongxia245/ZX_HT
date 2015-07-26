@@ -1,0 +1,35 @@
+    <!-- 生成表格的模板,包括表格,以及表格头部的面包屑菜单 -->
+    <script type="text/text/x-dot-template" id="tpl_all">
+        <div class="container clearfix">
+            <div>
+                <div class="crumb-wrap">
+                    <div class="crumb-list"><i class="icon-font"></i><a href="index.html">{{=it.level}}</a><span class="crumb-step">&gt;</span><span class="crumb-name">{{=it.level_1}}</span></div>
+                </div>
+                <div class="table">
+                    <table id="example" class="cell-border stripe hover " cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                {{ for (var i = 0; i
+                                < it.columns.length; i++) { }} <th>{{=it.columns[i]}}</th>
+                                    {{ } }}
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </script>
+    <!-- 生成表格的模板,包括表格,以及表格头部的面包屑菜单 -->
+    <script type="text/text/x-dot-template" id="tpl_table">
+        <div class="table">
+            <table id="example" class="cell-border stripe hover " cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        {{ for (var i = 0; i
+                        < it.columns.length; i++) { }} <th>{{=it.columns[i]["text"]}}</th>
+                            {{ } }}
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </script>

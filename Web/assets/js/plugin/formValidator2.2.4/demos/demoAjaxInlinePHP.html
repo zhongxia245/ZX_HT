@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Validation Engine 表单验证中文版 &raquo; 在线演示 &raquo; Ajax 验证：php - 前端开发仓库</title>
+<link rel="stylesheet" href="../css/validationEngine.jquery.css">
+<link rel="stylesheet" href="../css/template.css">
+<script src="../js/jquery-1.6.min.js"></script>
+<script src="../js/jquery.validationEngine.min.js"></script>
+<script>
+jQuery(document).ready(function(){
+	jQuery("#formID").validationEngine();
+});
+</script>
+</head>
+<body>
+<p class="demo_bar">
+	<a href="javascript://" onclick="alert(jQuery('#formID').validationEngine({evaluate:true}))">Return true or false without binding anything</a>
+	<a href="javascript://" onclick="jQuery.validationEngine.buildPrompt('#formID','This is an example','error')">Build a prompt on a div</a>
+	<a href="javascript://" onclick="jQuery.validationEngine.loadValidation('#date')">Load validation date</a>
+	<a href="javascript://" onclick="jQuery.validationEngine.closePrompt('.formError',true)">Close all prompt</a>
+	<a href="../index.html">返回首页</a>
+</p>
+
+<div class="demo_wrap">
+	<div class="demo_tips">
+		<p style="color:red;">本示例需在服务器上运行，否则会出错。</p>
+		<p>示例：演示使用 Ajax 验证控件，无论 Ajax 验证是否成功，都可以提交表单。</p>
+		<p>如需要 Ajax 验证成功后才能提交（或使用回调函数），请查看该<a href="demoAjaxSubmitPHP.html">示例</a>。</p>
+	</div>
+	<form id="formID" class="formular" method="post" action="" style="width:600px">
+		<fieldset>
+			<legend>Ajax validation</legend>
+			<label>用户名（Ajax 验证，只有 <strong>karnius</strong> 能通过）：</label>
+			<input value="" class="validate[required,custom[onlyLetterNumber],maxSize[20],ajax[ajaxUserCallPhp]] text-input" type="text" name="user" id="user" />
+			<p><code>validate[required,custom[onlyLetterNumber],maxSize[20],ajax[ajaxUserCallPhp]]</code></p>
+
+			<label>姓名（Ajax 验证，只有 <strong>duncan</strong> 能通过）：</label>
+			<input value="" class="validate[optional,custom[onlyLetterSp],maxSize[100],ajax[ajaxNameCallPhp]] text-input" type="text" name="firstname" id="firstname" />
+			<p><code>validate[optional,custom[onlyLetterSp],maxSize[100],ajax[ajaxNameCallPhp]]</code></p>
+
+			<label>Email：</label>
+			<input value="" class="validate[required,custom[email]] text-input" type="text" name="email" id="email" />
+			<p><code>validate[required,custom[email]]</code></p>
+		</fieldset>
+		<input class="submit" type="submit" value="验证 & 提交表单"/>
+	</form>
+</div>
+</body>
+</html>

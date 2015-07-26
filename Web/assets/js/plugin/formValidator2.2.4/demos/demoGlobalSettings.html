@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Validation Engine 表单验证中文版 &raquo; 在线演示 &raquo; 验证类的全局配置 - 前端开发仓库</title>
+<link rel="stylesheet" href="../css/validationEngine.jquery.css">
+<link rel="stylesheet" href="../css/template.css">
+<script src="../js/jquery-1.6.min.js"></script>
+<script src="../js/jquery.validationEngine.min.js"></script>
+<script>
+$.validationEngine.defaults.scroll = false;
+
+jQuery(document).ready(function(){
+	// binds form submission and fields to the validation engine
+	jQuery("#formID").validationEngine();
+});
+
+/**
+ *
+ * @param {jqObject} the field where the validation applies
+ * @param {Array[String]} validation rules for this field
+ * @param {int} rule index
+ * @param {Map} form options
+ * @return an error string if validation failed
+ */
+function checkHELLO(field, rules, i, options){
+	if (field.val() != "HELLO") {
+		// this allows to use i18 for the error msgs
+		return options.allrules.validate2fields.alertText;
+	}
+}
+</script>
+</head>
+<body>
+<p class="demo_bar">
+	<a href="javascript://" onclick="alert('is the form valid? '+jQuery('#formID').validationEngine('validate'))">验证表单</a>
+	<a href="javascript://" onclick="jQuery('#test').validationEngine('validateField', '#sport')">验证单个控件</a>
+	<a href="javascript://" onclick="jQuery('#sport').validationEngine('hide')">关闭单个控件的提示</a>
+	<a href="javascript://" onclick="jQuery('#formID').validationEngine('hide')">关闭表单中的所有提示</a>
+	<a href="javascript://" onclick="jQuery('#test').validationEngine('showPrompt', 'This is an example', 'pass')">给元素创建提示</a>
+	<a href="javascript://" onclick="jQuery('#test').validationEngine('hide')">关闭元素的提示</a>
+	<a href="../index.html">返回首页</a>
+</p>
+
+<div class="demo_wrap">
+	<div class="demo_tips">
+		<p>示例：演示如何定义全局设置</p>
+		<div id="test" class="test" style="width:150px;">这是一个 DIV 元素</div>
+	</div>
+
+	<form id="formID" class="formular" method="post" action="">
+		<fieldset>
+			<legend>Required</legend>
+			<label for="req">必填项目：</label>
+			<input value="" class="validate[required] text-input" type="text" name="req" id="req" />
+	
+			<label for="sport">最喜欢的运动 1：</label>
+			<select name="sport" id="sport" class="validate[required]">
+				<option value="">请选择</option>
+				<option value="option1">网球</option>
+				<option value="option2">足球</option>
+				<option value="option3">高尔夫球</option>
+			</select>
+	
+			<label for="sport2">最喜欢的运动 2：</label>
+			<select name="sport2" id="sport2" multiple class="validate[required]">
+				<option value="">请选择</option>
+				<option value="option1">网球</option>
+				<option value="option2">足球</option>
+				<option value="option3">高尔夫球</option>
+			</select>
+		</fieldset>
+
+		<input class="submit" type="submit" value="验证 & 提交表单"/>
+	</form>
+</div>
+</body>
+</html>

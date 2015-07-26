@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap  namespace="Tb_TableFieldConfig"  xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <statements>
+    <!--添加表-->
+    <select id="Add">
+      <![CDATA[
+            INSERT INTO dbo.TB_TABLEFIELDCONFIG ( TCID ,FCODE ,FNAME ,FTYPE ,CONTROLTYPE ,FORMTYPE   , TBSORT ,EDITSORT ,DEFAULTVALUE  ,ISDISPLAY ,ISADD ,ISUPDATE ,ISSEARCH ,ISMUST ,ISPK ,ISIDENTITY  )
+            VALUES  (#TCID# ,#FCODE# ,#FNAME# ,#FTYPE# ,#CONTROLTYPE# ,#FORMTYPE#  , #TBSORT# ,#EDITSORT# ,#DEFAULTVALUE#  ,#ISDISPLAY# ,#ISADD# ,#ISUPDATE# ,#ISSEARCH# ,#ISMUST# ,#ISPK# ,#ISIDENTITY#  )
+            SELECT @@IDENTITY AS MAXID
+        ]]>
+    </select>
+
+    <!--获取配置表数据-->
+    <select id="Select_TB_TABLEFIELDCONFIG">
+      <![CDATA[
+          SELECT * FROM dbo.TB_TABLEFIELDCONFIG
+          WHERE 1 = 1
+        ]]>
+      <isNotEmpty prepend="And" property="ID">
+        <![CDATA[
+          ID = #ID#
+        ]]>
+      </isNotEmpty>
+      <isNotEmpty prepend="And" property="TCID">
+        <![CDATA[
+          TCID = #TCID#
+        ]]>
+      </isNotEmpty>
+    </select>
+  </statements>
+</sqlMap>

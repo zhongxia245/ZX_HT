@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" namespace="DAO">
+	<statements>
+
+		<!--根据Sql语句获取数据, 用于BLL.DAO.GetSingle-->
+		<select id="ExcSQL" parameterClass="string">
+			<![CDATA[
+           $sql$
+        ]]>
+		</select>
+
+		<!--执行Sql语句-->
+		<update id="ExecSQLByUpdate" parameterClass="string">
+			<![CDATA[
+           $sql$
+        ]]>
+		</update>
+	</statements>
+</sqlMap>

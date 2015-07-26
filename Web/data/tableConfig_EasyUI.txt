@@ -1,0 +1,239 @@
+{
+    "1": {
+        "url": "../Server/AjaxHandler/ExecSqlHandler.ashx?action=Map_ExecSql.GetTb_Test",
+        "method":"get",
+        "columns": [[
+            {
+                "field": "ck",
+                "checkbox": true,
+                "width":30
+            },
+            {
+                "field": "ID",
+                "title": "编号",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "Name",
+                "title": "名称",
+                "align": "center",
+                "width":30
+            },
+            {
+                "field": "Password",
+                "title": "密码",
+                "align": "center",
+                "width":30
+            },
+			{
+                "field": "Tel",
+                "title": "手机号码",
+                "align": "center",
+                "width":30
+            },
+			{
+                "field": "RoleID",
+                "title": "角色编号",
+                "align": "center",
+                "width":30
+            },
+			{
+                "field": "Birthday",
+                "title": "出生日期",
+                "align": "center",
+                "width":30
+            },
+			{
+                "field": "CreateTime",
+                "title": "创建时间",
+                "align": "center",
+                "width":30
+            }
+        ]]
+    },
+    "2": {
+        "url": "../data/datagrid_data2.json",
+         "method":"get",
+        "columns": [[
+            {
+                "field": "ck",
+                "checkbox": true,
+                "width":30
+            },
+            {
+                "field": "productid",
+                "title": "编号",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "unitcost",
+                "title": "单位",
+                "align": "center",
+                "width":30
+            }
+        ]]
+    },
+    "3": {
+        "url": "../data/datagrid_data2.json",
+         "method":"get",
+        "columns": [[
+            {
+                "field": "ck",
+                "checkbox": true,
+                "width":30
+            },
+            {
+                "field": "productid",
+                "title": "编号",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            }
+        ]]
+    },
+    "4": {
+        "url": "../Server/AjaxHandler/ExecSqlHandler.ashx?action=Map_ExecSql.GetTB_TABLECONFIG",
+         "method":"get",
+        "columns": [[
+            {
+                "field": "ck",
+                "checkbox": true,
+                "width":30
+            },
+            {
+                "field": "DBNAME",
+                "title": "数据库名",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "TBCODE",
+                "title": "表名",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "TBNAME",
+                "title": "表昵称",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "SORTFIELD",
+                "title": "排序字段",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "PAGESIZE",
+                "title": "分页大小",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "EDITWIDTH",
+                "title": "编辑框宽度",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "EDITHEIGHT",
+                "title": "编辑框高度",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "TBTYPE",
+                "title": "表格类型",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "SELECTSQL",
+                "title": "查询语句",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "SELECTTYPE",
+                "title": "查询语句类型",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "INSERTSQL",
+                "title": "插入语句",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "INSERTTYPE",
+                "title": "插入语句类型",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "UPDATESQL",
+                "title": "编辑语句",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "UPDATETYPE",
+                "title": "编辑语句类型",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "DELETESQL",
+                "title": "删除语句",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            },
+            {
+                "field": "DELETETYPE",
+                "title": "删除语句类型",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            }
+        ]]
+    },
+    "5": {
+        "url": "../Server/AjaxHandler/ExecSqlHandler.ashx?action=Map_ExecSql.GetTB_TABLEFIELDCONFIG",
+         "method":"get",
+        "columns": [[
+            {
+                "field": "ck",
+                "checkbox": true,
+                "width":30
+            },
+            {
+                "field": "productid",
+                "title": "编号",
+                "align": "center",
+                "sortable": true,
+                "width":30
+            }
+        ]]
+    }
+}

@@ -1,0 +1,34 @@
+html,body,form,fieldset,legend,code,p{margin:0;padding:0;}
+html{background:#ececec;}
+body{color:#333;font:12px/1.7 'Microsoft YaHei',Arial,"\5b8b\4f53";}
+a{color:#05f;text-decoration:none;}
+a:hover{color:#e00;}
+
+.demo_bar{overflow:hidden;padding:10px 20px 0;border-bottom:1px solid #777;background:#fff; font:12px/14px arial;zoom:1;}
+.demo_bar a{float:left;margin-bottom:10px;padding:0 12px;border-left:1px solid #999;}
+.demo_bar a:first-child{padding-left:0; border-left:none;}
+
+.demo_wrap{position:relative;padding:20px;}
+.demo_wrap:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+
+.demo_tips{margin-bottom:20px;font-size:14px;}
+
+.formular{width:400px;margin:0 auto;padding:20px;border:1px solid #a5a8b8;border-radius:3px;background:#fcfcfc;}
+.formular fieldset{margin-bottom:20px;padding:10px 20px;border:1px solid #b5b8c8;border-radius:3px;}
+.formular legend{color:#15428b;font-size:12px;font-weight:bold;}
+.formular label{display:block;}
+.formular input,
+.formular select,
+.formular textarea{display:block;margin-bottom:12px;}
+.formular textarea{width:250px;height:70px;margin-top:4px;padding:4px;border:1px solid #b5b8c8;background:#fff repeat-x;color:#555;font-size:14px;}
+.formular p{margin:0.5em 0;}
+.formular code{color:#d00;font-family:Consolas,Monaco,Courier,"Courier New";font-size:12px;}
+
+.formular .text-input{width:250px;padding:4px;border:1px solid #b5b8c8;background:#fff repeat-x;color:#555;font-size:14px;}
+.formular .radio,
+.formular .checkbox{display:inline;margin:0;}
+.formular .submit{margin-top:20px;padding:4px;border:1px solid #aaa;text-decoration:none;cursor:pointer;}
+
+.formular .infos{margin-bottom:10px;padding:10px;background:#ececec;color:#333;font-size:12px;}
+.formular .fc-error{width:350px;margin-bottom:15px;padding:4px;border:1px solid #b5b8c8;background:#ffeaea;color:555;font-size:12px;}
+

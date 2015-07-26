@@ -1,0 +1,1298 @@
+************************************begin***********************************
+2015-07-05 08:22:53,698 [5184] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 08:41:50,721 [4604] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.ArgumentException: Keyword not supported.
+参数名: version
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ValidateKeyword(String keyword)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   在 System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connStr)
+   在 MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.Query(String SQLString, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 705
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_rhoyfanj.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 08:44:59,798 [8156] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.ArgumentException: Keyword not supported.
+参数名: version
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ValidateKeyword(String keyword)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   在 System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connStr)
+   在 MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.Query(String SQLString, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 705
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_ffchbyxp.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 08:48:37,267 [7124] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.ArgumentException: Keyword not supported.
+参数名: version
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ValidateKeyword(String keyword)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   在 System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connStr)
+   在 MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.Query(String SQLString, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 705
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_0zdhud1l.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 08:57:55,558 [6208] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the MySql. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "MySql" not found, failed. Cause: 未能加载文件或程序集“MySql.Data, Version=1.0.7.30072, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040) ---> System.IO.FileLoadException: 未能加载文件或程序集“MySql.Data, Version=1.0.7.30072, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, Boolean useConfigFileWatcher)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_hrdo0pvx.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:03:01,069 [6208] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the MySql. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "MySql" not found, failed. Cause: 未能加载文件或程序集“MySql.Data, Version=1.0.7.30072, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040) ---> System.IO.FileLoadException: 未能加载文件或程序集“MySql.Data, Version=1.0.7.30072, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, Boolean useConfigFileWatcher)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_lv3c4wyu.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:05:15,760 [9072] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.ArgumentException: Keyword not supported.
+参数名: version
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ValidateKeyword(String keyword)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   在 System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connStr)
+   在 MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.Query(String SQLString, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 705
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_i3cjqne2.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:05:30,124 [9072] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the MySql. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "MySql" not found, failed. Cause: 未能加载文件或程序集“MySql.Data, Version=1.0.7.30072, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040) ---> System.IO.FileLoadException: 未能加载文件或程序集“MySql.Data, Version=1.0.7.30072, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_cek1rwgn.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:06:08,121 [8724] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.ArgumentException: Keyword not supported.
+参数名: version
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ValidateKeyword(String keyword)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   在 System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.Query(String SQLString, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 705
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_zsuf10kr.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:06:42,629 [9032] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the MySql. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "MySql" not found, failed. Cause: 未能加载文件或程序集“MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040) ---> System.IO.FileLoadException: 未能加载文件或程序集“MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_v4twajzb.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:06:53,066 [9072] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the MySql. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "MySql" not found, failed. Cause: 未能加载文件或程序集“MySql.Data, Version=1.0.7.30072, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040) ---> System.IO.FileLoadException: 未能加载文件或程序集“MySql.Data, Version=1.0.7.30072, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_zx0v0eag.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:07:32,078 [6640] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.IO.FileLoadException: 未能加载文件或程序集“MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+文件名:“MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param)
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+警告: 程序集绑定日志记录被关闭。
+要启用程序集绑定失败日志记录，请将注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD)设置为 1。
+注意: 会有一些与程序集绑定失败日志记录关联的性能损失。
+要关闭此功能，请移除注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog]。
+
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_iu4gohi3.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:08:09,441 [4832] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.IO.FileLoadException: 未能加载文件或程序集“MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+文件名:“MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param)
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+警告: 程序集绑定日志记录被关闭。
+要启用程序集绑定失败日志记录，请将注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD)设置为 1。
+注意: 会有一些与程序集绑定失败日志记录关联的性能损失。
+要关闭此功能，请移除注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog]。
+
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_c4wbzoac.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:08:09,441 [7236] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.IO.FileLoadException: 未能加载文件或程序集“MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+文件名:“MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param)
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+警告: 程序集绑定日志记录被关闭。
+要启用程序集绑定失败日志记录，请将注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD)设置为 1。
+注意: 会有一些与程序集绑定失败日志记录关联的性能损失。
+要关闭此功能，请移除注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog]。
+
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_c4wbzoac.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:08:10,892 [6640] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.IO.FileLoadException: 未能加载文件或程序集“MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+文件名:“MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param)
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+警告: 程序集绑定日志记录被关闭。
+要启用程序集绑定失败日志记录，请将注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD)设置为 1。
+注意: 会有一些与程序集绑定失败日志记录关联的性能损失。
+要关闭此功能，请移除注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog]。
+
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_c4wbzoac.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:08:23,544 [4832] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.IO.FileLoadException: 未能加载文件或程序集“MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+文件名:“MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param)
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+警告: 程序集绑定日志记录被关闭。
+要启用程序集绑定失败日志记录，请将注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD)设置为 1。
+注意: 会有一些与程序集绑定失败日志记录关联的性能损失。
+要关闭此功能，请移除注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog]。
+
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_trbtsckg.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:08:25,292 [7236] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.IO.FileLoadException: 未能加载文件或程序集“MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+文件名:“MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param)
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+警告: 程序集绑定日志记录被关闭。
+要启用程序集绑定失败日志记录，请将注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD)设置为 1。
+注意: 会有一些与程序集绑定失败日志记录关联的性能损失。
+要关闭此功能，请移除注册表值 [HKLM\Software\Microsoft\Fusion!EnableLog]。
+
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_trbtsckg.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:08:52,140 [6640] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the MySql. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "MySql" not found, failed. Cause: 未能加载文件或程序集“MySql.Data, Version=5.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040) ---> System.IO.FileLoadException: 未能加载文件或程序集“MySql.Data, Version=5.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_asq2cv5u.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:08:54,628 [4832] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the MySql. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "MySql" not found, failed. Cause: 未能加载文件或程序集“MySql.Data, Version=5.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040) ---> System.IO.FileLoadException: 未能加载文件或程序集“MySql.Data, Version=5.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_asq2cv5u.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:09:14,820 [3948] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.ArgumentException: Keyword not supported.
+参数名: version
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ValidateKeyword(String keyword)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   在 System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.Query(String SQLString, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 705
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_enzxmi10.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:10:41,735 [7064] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the ByteFx. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "ByteFx" not found, failed. Cause: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_xkwvulf5.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:18:54,974 [8908] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the ByteFx. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "ByteFx" not found, failed. Cause: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, Boolean useConfigFileWatcher)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_d5abam12.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:19:11,232 [7856] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the ByteFx. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "ByteFx" not found, failed. Cause: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_2vbtdccy.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:19:12,776 [8908] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the ByteFx. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "ByteFx" not found, failed. Cause: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_2vbtdccy.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:19:19,233 [6180] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the ByteFx. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "ByteFx" not found, failed. Cause: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_2vbtdccy.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:19:23,018 [8908] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the ByteFx. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "ByteFx" not found, failed. Cause: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_2vbtdccy.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:19:38,744 [8796] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the ByteFx. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "ByteFx" not found, failed. Cause: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_2vbtdccy.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:19:58,269 [8796] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the ByteFx. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "ByteFx" not found, failed. Cause: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_e05dbis2.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:19:59,809 [7856] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the ByteFx. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "ByteFx" not found, failed. Cause: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_e05dbis2.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:20:22,517 [8908] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the ByteFx. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "ByteFx" not found, failed. Cause: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。 ---> System.IO.FileNotFoundException: 未能加载文件或程序集“ByteFX.MySqlClient, Version=0.7.6.15073, Culture=neutral, PublicKeyToken=f2fef6fed1732fc1”或它的某一个依赖项。系统找不到指定的文件。
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_e05dbis2.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:20:39,582 [6528] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.TypeInitializationException: “Web.IBatisUtil”的类型初始值设定项引发异常。 ---> IBatisNet.Common.Exceptions.ConfigurationException: 
+- The error occurred while loading Providers.
+- initialize provider  
+- Check the MySql. ---> IBatisNet.Common.Exceptions.ConfigurationException: Could not configure providers. Unable to load provider named "MySql" not found, failed. Cause: 未能加载文件或程序集“MySql.Data, Version=1.0.7.30072, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040) ---> System.IO.FileLoadException: 未能加载文件或程序集“MySql.Data, Version=1.0.7.30072, Culture=neutral, PublicKeyToken=c5687fc88969c44d”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+   在 System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   在 System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   在 System.Reflection.Assembly.Load(String assemblyString)
+   在 IBatisNet.Common.DbProvider.Initialize()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.Common.DbProvider.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.GetProviders()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Initialize()
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Build(XmlDocument document, DataSource dataSource, Boolean useConfigFileWatcher, Boolean isCallFromDao)
+   在 IBatisNet.DataMapper.Configuration.DomSqlMapBuilder.Configure(String resource)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbSqlMapper.GetMapper(String _strResource) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbSqlMapper.cs:行号 30
+   在 StrongSoftManage.IBatisDAO.IIBatisDAO..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IIBatisDAO.cs:行号 23
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL..ctor(String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 16
+   在 StrongSoftManage.DAL.DAOFactory.CreateDAO(String dbType, String configFile) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.DAL\DAOFactory.cs:行号 52
+   在 Web.IBatisUtil..cctor() 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\IBatisUtil.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_2ppvytct.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:22:36,379 [9152] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.ArgumentException: Keyword not supported.
+参数名: version
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ValidateKeyword(String keyword)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   在 System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.Query(String SQLString, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 705
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_3wf4nl3g.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:23:01,576 [9152] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.ArgumentException: Keyword not supported.
+参数名: version
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ValidateKeyword(String keyword)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   在 System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.Query(String SQLString, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 705
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_rqpbllcu.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:23:04,399 [6528] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.ArgumentException: Keyword not supported.
+参数名: version
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ValidateKeyword(String keyword)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   在 System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.Query(String SQLString, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 705
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_rqpbllcu.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:24:52,266 [8268] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.ArgumentException: Keyword not supported.
+参数名: version
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ValidateKeyword(String keyword)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   在 System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connStr)
+   在 MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.Query(String SQLString, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 705
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_2fpexkdh.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:24:52,266 [8556] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.ArgumentException: Keyword not supported.
+参数名: version
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ValidateKeyword(String keyword)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   在 System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connStr)
+   在 MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.Query(String SQLString, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 705
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_2fpexkdh.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:25:11,065 [6528] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.ArgumentException: Keyword not supported.
+参数名: command logging
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.ValidateKeyword(String keyword)
+   在 MySql.Data.MySqlClient.MySqlConnectionStringBuilder.set_Item(String keyword, Object value)
+   在 System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   在 MySql.Data.MySqlClient.MySqlConnection..ctor(String connectionString)
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.Query(String SQLString, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 705
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_jrnclctw.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:25:31,334 [9040] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Exception: Call to GetHostEntry failed after 00:00:00 while querying for hostname '5596a939350b6.sh.cdb.myqcloud.com:4897': SocketErrorCode=HostNotFound, ErrorCode=11001, NativeErrorCode=11001. ---> System.Net.Sockets.SocketException: 不知道这样的主机。
+   在 System.Net.Dns.GetAddrInfo(String name)
+   在 System.Net.Dns.InternalGetHostByName(String hostName, Boolean includeIPv6)
+   在 System.Net.Dns.GetHostEntry(String hostNameOrAddress)
+   在 MySql.Data.Common.StreamCreator.GetDnsHostEntry(String hostname)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 MySql.Data.Common.StreamCreator.GetDnsHostEntry(String hostname)
+   在 MySql.Data.Common.StreamCreator.GetHostEntry(String hostname)
+   在 MySql.Data.Common.StreamCreator.GetStreamFromHost(String pipeName, String hostName, UInt32 timeout)
+   在 MySql.Data.Common.StreamCreator.GetStream(UInt32 timeout)
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 730
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.Query(String SQLString, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 708
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_uinefq3u.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:25:45,046 [8268] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.Exception: Call to GetHostEntry failed after 00:00:00 while querying for hostname '5596a939350b6.sh.cdb.myqcloud.com:4897': SocketErrorCode=HostNotFound, ErrorCode=11001, NativeErrorCode=11001. ---> System.Net.Sockets.SocketException: 不知道这样的主机。
+   在 System.Net.Dns.GetAddrInfo(String name)
+   在 System.Net.Dns.InternalGetHostByName(String hostName, Boolean includeIPv6)
+   在 System.Net.Dns.GetHostEntry(String hostNameOrAddress)
+   在 MySql.Data.Common.StreamCreator.GetDnsHostEntry(String hostname)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 MySql.Data.Common.StreamCreator.GetDnsHostEntry(String hostname)
+   在 MySql.Data.Common.StreamCreator.GetHostEntry(String hostname)
+   在 MySql.Data.Common.StreamCreator.GetStreamFromHost(String pipeName, String hostName, UInt32 timeout)
+   在 MySql.Data.Common.StreamCreator.GetStream(UInt32 timeout)
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.PrepareCommand(MySqlCommand cmd, MySqlConnection conn, MySqlTransaction trans, String cmdText, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 730
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.Query(String SQLString, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 708
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_uinefq3u.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-05 09:35:38,974 [9988] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Exception: Table 'SSO.temp' doesn't exist
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperMySQL.Query(String SQLString, MySqlParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperMySQL.cs:行号 719
+   在 StrongSoftManage.IBatisDAO.IBatisDAOMySQL.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOMySQL.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库+LOG）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\8ac8f9fb\88cce45f\App_Web_hlaaoe1z.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="F:\库\Desktop\IBatisUtil" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="配置文件1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/IBatisNet.Common.dll" publishTime="03/22/2015 08:21:46" />
+    <file relUrl="bin/StrongSoftManage.Common.dll" publishTime="03/22/2015 08:21:46" />
+    <file relUrl="bin/System.Data.SQLite.DLL" publishTime="03/22/2015 08:37:59" />
+    <file relUrl="bin/MySql.Data.dll" publishTime="03/22/2015 08:37:59" />
+    <file relUrl="Config/properties.txt" publishTime="03/22/2015 21:43:03" />
+    <file relUrl="Global.asax" publishTime="06/05/2015 10:17:53" />
+    <file relUrl="Config/CommonXML.xml" publishTime="03/23/2015 00:09:09" />
+    <file relUrl="Config/SqlMap_ORACLE.config" publishTime="03/22/2015 21:43:03" />
+    <file relUrl="bin/log4net.dll" publishTime="03/22/2015 08:21:53" />
+    <file relUrl="Config/AppSettings.xml" publishTime="03/22/2015 23:07:42" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="03/22/2015 21:33:28" />
+    <file relUrl="Config/SqlMap_SQLITE.config" publishTime="06/05/2015 11:46:25" />
+    <file relUrl="Config/providers.config" publishTime="03/22/2015 23:04:52" />
+    <file relUrl="bin/Web.dll" publishTime="06/05/2015 12:24:29" />
+    <file relUrl="Config/SqlMap_MSSQL.config" publishTime="03/22/2015 21:53:26" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="03/22/2015 21:33:28" />
+    <file relUrl="bin/IBatisNet.DataMapper.dll" publishTime="03/22/2015 08:21:46" />
+    <file relUrl="Default.aspx" publishTime="03/22/2015 21:41:50" />
+    <file relUrl="Config/log4net.config" publishTime="03/22/2015 21:43:03" />
+    <file relUrl="Config/SqlMap_OleDb.config" publishTime="06/05/2015 10:49:54" />
+    <file relUrl="bin/zhongxia.IBatisDAO.dll" publishTime="06/05/2015 10:42:35" />
+    <file relUrl="Config/SqlMap/Map_Test.xml" publishTime="03/22/2015 23:08:24" />
+    <file relUrl="bin/zhongxia.IBatisDAO.pdb" publishTime="06/05/2015 10:42:35" />
+    <file relUrl="Web.config" publishTime="06/05/2015 12:24:57" />
+    <file relUrl="Config/DAO.xml" publishTime="06/05/2015 11:46:31" />
+    <file relUrl="bin/Web.pdb" publishTime="06/05/2015 12:24:29" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="03/22/2015 21:33:28" />
+  </publishProfile>
+</publishData>

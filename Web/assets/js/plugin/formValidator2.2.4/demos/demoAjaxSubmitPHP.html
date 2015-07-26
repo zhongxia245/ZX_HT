@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Validation Engine 表单验证中文版 &raquo; 在线演示 &raquo; Ajax 验证：php - 前端开发仓库</title>
+<link rel="stylesheet" href="../css/validationEngine.jquery.css">
+<link rel="stylesheet" href="../css/template.css">
+<script src="../js/jquery-1.6.min.js"></script>
+<script src="../js/jquery.validationEngine.min.js"></script>
+<script>
+// This method is called right before the ajax form validation request
+// it is typically used to setup some visuals ("Please wait...");
+// you may return a false to stop the request 
+function beforeCall(form, options){
+	if (window.console) 
+		console.log("该函数在验证规则通过后，Ajax 验证前执行");
+	return true;
+}
+
+// Called once the server replies to the ajax form validation request
+function ajaxValidationCallback(status, form, json, options){
+	if (window.console) 
+		console.log(status);
+	
+	if (status === true) {
+		alert("Ajax 验证通过");
+		// uncomment these lines to submit the form to form.action
+		// form.validationEngine('detach');
+		// form.submit();
+		// or you may use AJAX again to submit the data
+	}
+}
+
+jQuery(document).ready(function(){
+	jQuery("#formID").validationEngine({
+		ajaxFormValidation: true,
+		onAjaxFormComplete: ajaxValidationCallback,
+		onBeforeAjaxFormValidation: beforeCall
+	});
+});
+</script>
+</head>
+<body>  
+<p class="demo_bar"><a href="../index.html">返回首页</a></p>
+
+<div class="demo_wrap">
+	<div class="demo_tips">
+		<p style="color:red;">本示例需在服务器上运行，否则会出错。</p>
+		<p>实例：演示使用 Ajax 验证<strong>表单</strong>和<strong>控件</strong>。</p>
+		<p>表单验证成功后，使用了回调函数，请用控制台查看。</p>
+	</div>
+
+	<form id="formID" class="formular" method="post" action="phpajax/ajaxValidateSubmit.php" style="width:600px">
+		<fieldset>
+			<legend>Ajax validation</legend>
+			<label>用户名（Ajax 验证，只有 <strong>karnius</strong> 能通过）：</label>
+			<input value="" class="validate[required,custom[onlyLetterNumber],maxSize[20],ajax[ajaxUserCallPhp]] text-input" type="text" name="user" id="user" />
+			<p><code>validate[required,custom[onlyLetterNumber],maxSize[20],ajax[ajaxUserCallPhp]]</code></p>
+			
+			<label>姓名（Ajax 验证，只有 <strong>duncan</strong> 能通过）：</label>
+			<input value="olivier" class="validate[custom[onlyLetterSp],maxSize[100],ajax[ajaxNameCallPhp]] text-input" type="text" name="firstname" id="firstname" />
+			<p><code>validate[custom[onlyLetterSp],maxSize[100],ajax[ajaxNameCallPhp]]</code></p>
+	
+			<label>Email：</label>
+			<input value="someone1@here.com" class="validate[required,custom[email]] text-input" type="text" name="email" id="email" />
+			<p><code>validate[required,custom[email]]</code></p>
+		</fieldset>
+		<input class="submit" type="submit" value="验证 & 提交表单"/>
+	</form>
+</div>
+</body>
+</html>

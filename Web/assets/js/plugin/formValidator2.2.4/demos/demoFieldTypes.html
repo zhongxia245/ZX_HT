@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Validation Engine 表单验证中文版 &raquo; 在线演示 &raquo; 各类控件验证 - 前端开发仓库</title>
+<link rel="stylesheet" href="../css/validationEngine.jquery.css">
+<link rel="stylesheet" href="../css/template.css">
+<script src="../js/jquery-1.6.min.js"></script>
+<script src="../js/jquery.validationEngine.min.js"></script>
+<script>
+jQuery(document).ready( function() {
+	// binds form submission and fields to the validation engine
+	jQuery("#formID").validationEngine();
+});
+</script>
+</head>
+<body>
+<p class="demo_bar">
+	<a href="javascript://" onclick="alert('is the form valid? '+jQuery('#formID').validationEngine('validate'))">验证表单</a>
+	<a href="javascript://" onclick="jQuery('#formID').validationEngine('showPrompt', 'This is an example', 'pass')">给表单创建成功提示</a>
+	<a href="javascript://" onclick="jQuery('#formID').validationEngine('hide')">关闭表单中的所有提示</a>
+	<a href="../index.html">返回首页</a>
+</p>
+
+<div class="demo_wrap">
+	<div class="demo_tips">
+		<p>示例：演示支持各种表单控件的验证</p>
+	</div>
+	
+	<form id="formID" class="formular" method="post" action="">
+		<fieldset>
+			<legend>Text</legend>
+			<p>需以 http://、https:// 或 ftp:// 开头</p>
+			<label for="url">输入 URL 地址：</label>
+			<input value="http://" class="validate[required,custom[url]] text-input" type="text" name="url" id="url" />
+		</fieldset>
+
+		<fieldset>
+			<legend>TextArea</legend>
+				<textarea class="validate[required] text-input" rows="2" cols="20" name="ta" id="ta" ></textarea>
+			</label>
+		</fieldset>
+
+		<fieldset>
+			<legend>Select single</legend>
+			<label>
+				<select name="sport" id="sport" class="validate[required]">
+					<option value="">请选择</option>
+					<option value="option1">网球</option>
+					<option value="option2">足球</option>
+					<option value="option3">高尔夫</option>
+				</select>
+			</label>
+		</fieldset>
+
+		<fieldset>
+			<legend>Select mutiple</legend>
+			<label>
+				<select name="sport2" id="sport2" multiple="true" class="validate[required]">
+					<option value="">请选择</option>
+					<option value="option1">网球</option>
+					<option value="option2">足球</option>
+					<option value="option3">高尔夫</option>
+				</select>
+			</label>
+		</fieldset>
+
+		<fieldset>
+			<legend>Radio</legend>
+			<p>单选框群组：</p>
+			<label>选项 1：<input class="validate[required] radio" type="radio" name="group0" id="radio1" value="5"/></label>
+			<label>选项 2：<input class="validate[required] radio" type="radio" name="group0" id="radio2" value="3"/></label>
+			<label>选项 3：<input class="validate[required] radio" type="radio" name="group0" id="radio3" value="9"/></label>
+		</fieldset>
+
+		<fieldset>
+			<legend>Checkbox</legend>
+			<p>至少选择2个复选框：</p>
+			<label>选项 1：<input class="validate[minCheckbox[2]] checkbox" type="checkbox" name="group1" id="maxcheck1" value="5"/></label>
+			<label>选项 2：<input class="validate[minCheckbox[2]] checkbox" type="checkbox" name="group1" id="maxcheck2" value="3"/></label>
+			<label>选项 3：<input class="validate[minCheckbox[2]] checkbox" type="checkbox" name="group1" id="maxcheck3" value="9"/></label>
+		</fieldset>
+
+		<fieldset>
+			<legend>File</legend>
+			<label>选择一个文件：<input class="validate[required] text-input" type="file" name="file" id="file"/></label>
+		</fieldset>
+
+		<input class="submit" type="submit" value="验证 & 提交表单"/>
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap  namespace="Tb_TableConfig"  xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <statements>
+
+    <!--获取当前数据库下的所有表-->
+    <select id="GetTableNames">
+      <![CDATA[
+          SELECT UPPER(NAME) AS  _TBNAME FROM SYSOBJECTS
+          WHERE XTYPE='U' ORDER BY NAME
+        ]]>
+    </select>
+
+     <!--获取指定表名的所有字段信息-->
+    <select id="GetColumnsByTbName">
+      <![CDATA[
+         SELECT 
+            _TBNAME= UPPER(D.NAME),_FIELDNAME=UPPER(A.NAME), 
+            _IDENTITY=CASE WHEN COLUMNPROPERTY(A.ID,A.NAME,'ISIDENTITY')=1 THEN '√' ELSE '' END, 
+            _ISPK=CASE WHEN EXISTS(SELECT 1 FROM SYSOBJECTS WHERE XTYPE= 'PK' AND NAME IN ( 
+        SELECT NAME FROM SYSINDEXES WHERE INDID IN( 
+        SELECT INDID FROM SYSINDEXKEYS WHERE ID = A.ID AND COLID=A.COLID 
+        ))) THEN '√' ELSE '' END, 
+            _TYPE=B.NAME, 
+            _BYTES=A.LENGTH, 
+            _LEGNTH=COLUMNPROPERTY(A.ID,A.NAME, 'PRECISION'), 
+            _PRECISION=ISNULL(COLUMNPROPERTY(A.ID,A.NAME, 'SCALE'),0), 
+            _ISNULL=CASE WHEN A.ISNULLABLE=1 THEN '√'ELSE '' END, 
+            _DEFAULT=ISNULL(E.TEXT, ''), 
+            _REMARK=ISNULL(G.[VALUE], '') 
+        FROM SYSCOLUMNS A 
+            LEFT JOIN SYSTYPES B ON A.XTYPE=B.XUSERTYPE 
+            INNER JOIN SYSOBJECTS D ON A.ID=D.ID AND D.XTYPE= 'U' AND D.NAME <> 'DTPROPERTIES' AND D.NAME = #TBNAME#
+            LEFT JOIN SYSCOMMENTS E ON A.CDEFAULT=E.ID 
+            LEFT JOIN SYS.EXTENDED_PROPERTIES G ON A.ID=G.MAJOR_ID AND A.COLID=G.MINOR_ID AND G.NAME='MS_DESCRIPTION' 
+        ORDER BY A.ID,A.COLORDER 
+        ]]>
+    </select>
+
+    <!--添加表-->
+    <select id="Add">
+      <![CDATA[
+         INSERT INTO dbo.TB_TABLECONFIG ( DBNAME , TBCODE , TBNAME , SORTFIELD , PAGESIZE ,EDITWIDTH , EDITHEIGHT ,TBTYPE )
+          VALUES  ( #DBNAME# , #TBCODE# , #TBNAME# , #SORTFIELD# , #PAGESIZE# ,#EDITWIDTH# , #EDITHEIGHT# ,#TBTYPE#)
+          SELECT @@IDENTITY AS MAXID
+        ]]>
+    </select>
+
+    <!--获取主表配置-->
+    <select id="Select_TB_TABLECONFIG">
+      <![CDATA[
+         SELECT * FROM dbo.TB_TABLECONFIG
+         WHERE 1 =  1
+        ]]>
+      <isNotEmpty prepend="And" property="ID">
+        <![CDATA[
+          ID = #ID#
+        ]]>
+      </isNotEmpty>
+      <isNotEmpty prepend="And" property="TBCODE">
+        <![CDATA[
+          TBCODE = #TBCODE#
+        ]]>
+      </isNotEmpty>
+      <isNotEmpty prepend="And" property="DBNAME">
+        <![CDATA[
+          DBNAME = #DBNAME#
+        ]]>
+      </isNotEmpty>
+    </select>
+  </statements>
+</sqlMap>

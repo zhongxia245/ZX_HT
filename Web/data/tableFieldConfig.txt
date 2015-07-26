@@ -1,0 +1,222 @@
+{
+    "1": [
+        {
+            "data": "ID",
+            "text": "编号",
+            "controlType": "form",
+			"validate":"required"
+        },
+        {
+            "data": "Name",
+            "text": "名称",
+            "controlType": "form"
+        },
+        {
+            "data": "Password",
+            "formType": "password",
+            "text": "密码",
+            "controlType": "form"
+        },
+        {
+            "data": "Tel",
+            "text": "手机号码",
+            "controlType": "form",
+			"validate":"custom[phone]"
+        },
+        {
+            "data": "RoleID",
+            "text": "角色编号",
+            "controlType": "form"
+        },
+        {
+            "data": "Birthday",
+            "text": "出生日期",
+            "controlType": "datetime"
+        },{
+            "data": "CreateTime",
+            "text": "创建时间",
+            "controlType": "datetime"
+        }
+    ],
+    "2": [
+        {
+            "data": "unitcost",
+            "text": "日期",
+            "controlType": "date",
+            "validate":"required"
+        },
+        {
+            "data": "unitcost1",
+            "formType": "datetime",
+            "text": "复选",
+            "controlType": "form",
+             "validate":"required"
+        },
+        {
+            "data": "unitcost2",
+            "formType": "text",
+            "text": "文本框",
+            "controlType": "form"
+        },
+        {
+            "data": "unitcost2",
+            "text": "是否",
+            "controlType": "form"
+        },
+        {
+            "data": "unitcost4",
+            "formType": "password",
+            "text": "密码",
+            "controlType": "form"
+        }
+    ],
+    "3": [
+        {
+            "data": "date",
+            "text": "日期",
+            "controlType": "date"
+        },
+        {
+            "data": "date1",
+            "formType": "datetime",
+            "text": "复选",
+            "controlType": "form"
+        },
+        {
+            "data": "date3",
+            "formType": "text",
+            "text": "文本框",
+            "controlType": "form"
+        },
+        {
+            "data": "date4",
+            "text": "是否",
+            "controlType": "form"
+        },
+        {
+            "data": "date6",
+            "formType": "password",
+            "text": "密码",
+            "controlType": "form",
+            "colspan": 3
+        }
+    ],
+    "4": [
+        {
+            "data": "DBNAME",
+            "text": "数据库名",
+            "controlType": "form",
+            "validate":"required"
+        },
+        {
+            "data": "TBCODE",
+            "text": "表名",
+            "controlType": "form",
+            "validate":"required"
+        },
+        {
+            "data": "TBNAME",
+            "text": "表昵称",
+            "controlType": "form",
+            "validate":"required"
+        },
+        {
+            "data": "SORTFIELD",
+            "text": "排序字段",
+            "controlType": "form",
+            "validate":"required"
+        },
+        {
+            "data": "PAGESIZE",
+            "text": "分页大小",
+            "controlType": "form",
+            "validate":"required"
+        },
+        {
+            "data": "EDITWIDTH",
+            "text": "编辑框宽度",
+            "controlType": "form"
+        },
+        {
+            "data": "EDITHEIGHT",
+            "text": "编辑框高度",
+            "controlType": "form"
+        },
+        {
+            "data": "TBTYPE",
+            "text": "表类型",
+            "controlType": "form"
+        },
+        {
+            "data": "SELECTSQL",
+            "text": "查询语句",
+            "controlType": "form"
+        },
+        {
+            "data": "SELECTTYPE",
+            "text": "查询语句类型",
+            "controlType": "form"
+        },
+        {
+            "data": "INSERTSQL",
+            "text": "插入语句",
+            "controlType": "form"
+        },
+        {
+            "data": "INSERTTYPE",
+            "text": "插入语句类型",
+            "controlType": "form"
+        },
+        {
+            "data": "UPDATESQL",
+            "text": "修改语句",
+            "controlType": "form"
+        },
+        {
+            "data": "UPDATETYPE",
+            "text": "修改语句类型",
+            "controlType": "form"
+        },
+        {
+            "data": "DELETESQL",
+            "text": "删除语句",
+            "controlType": "form"
+        },
+        {
+            "data": "DELETETYPE",
+            "text": "删除语句类型",
+            "controlType": "form"
+        }
+    ],
+    "5": [
+        {
+            "data": "date",
+            "text": "日期",
+            "controlType": "date"
+        },
+        {
+            "data": "date1",
+            "formType": "datetime",
+            "text": "复选",
+            "controlType": "form"
+        },
+        {
+            "data": "date3",
+            "formType": "text",
+            "text": "文本框",
+            "controlType": "form"
+        },
+        {
+            "data": "date4",
+            "text": "是否",
+            "controlType": "form"
+        },
+        {
+            "data": "date6",
+            "formType": "password",
+            "text": "密码",
+            "controlType": "form",
+            "colspan": 3
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>表格测试</title>
+<!--     <script type="text/javascript" src="js/referenceAllCSS.js"></script>
+    <script type="text/javascript" src="js/referenceAllJS.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="plunin/media/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="text/javascript" src="js/libs/modernizr.min.js"></script>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="plunin/media/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    	//1. 注册监听事件
+        $(window).resize(function() {
+            // var height = $(window).height() - 172;
+            // $('#example').dataTable.sScrollY = height ;
+        });
+
+        //2. 初始化表格
+        var height = $(window).height() - 172;
+        $('#example').dataTable({
+            "oLanguage": {
+                "sLengthMenu": "显示: _MENU_ 条",
+                "sZeroRecords": "对不起，没有匹配的数据",
+                "sInfo": "第 _START_ - _END_ 条 / 共 _TOTAL_ 条",
+                "sInfoEmpty": "没有匹配的数据",
+                "sInfoFiltered": "(数据表中共 _MAX_ 条记录)",
+                "sProcessing": "正在加载中...",
+                "sSearch": "查询:",
+                "oPaginate": {
+                    "sFirst": "第一页",
+                    "sPrevious": " 上一页 ",
+                    "sNext": " 下一页 ",
+                    "sLast": " 最后一页 "
+                }
+            },
+            "sDom": '<f>rt<ilp><"clear">', //表格的布局
+            "bDeferRender": true, //是否启用延迟加载：当你使用AJAX数据源时，可以提升速度。 默认为false
+            "bScrollCollapse": false, //当显示的数据不足以支撑表格的默认的高度时，依然显示纵向的滚动条。(默认是false)
+            "bPaginate": true, //是否开启分页 默认True
+            "bSort": true, //是否开启列排序功能，如果想禁用某一列排序，可以在每列设置使用bSortable参数
+            "bProcessing": true, //是否显示加载时进度条，默认为false
+            "ajax": "data/objects.txt",
+            "sScrollY": height, //固定表格的高度
+            "columns": [{
+                "data": "name"
+            }, {
+                "data": "position"
+            }, {
+                "data": "office"
+            }, {
+                "data": "extn"
+            }, {
+                "data": "start_date"
+            }, {
+                "data": "salary"
+            }]
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="container clearfix">
+        <div>
+            <div class="crumb-wrap">
+                <div class="crumb-list"><i class="icon-font"></i><a href="main.html">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">作品管理</span></div>
+            </div>
+            <div class="table">
+                <table id="example" class="cell-border stripe hover " cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>中文名</th>
+                            <th>位置</th>
+                            <th>办公室</th>
+                            <th>什么鬼</th>
+                            <th>开始时间</th>
+                            <th>薪资</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

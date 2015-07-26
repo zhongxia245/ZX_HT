@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EasyUI Demo</title>
+</head>
+
+<body>
+    <table id="dg"></table>
+    <div id="tb_edit"></div>
+    <script type="text/javascript">
+    window.startTime = new Date().getTime();
+    </script>
+    <script type="text/javascript" src="../assets/js/zhongxia/zx_EasyUIDataTable.js"></script>
+    <script type="text/javascript">
+    window.endTime = new Date().getTime();
+    console.log("耗时:"+(endTime - startTime));
+    </script>
+    <script type="text/javascript">
+    zx_EasyUIDataTable.init('dg', {
+        url: "../assets/js/plugin/easyui/demo/datagrid/datagrid_data1.json",
+        method: "get",
+        height: 300,
+        columns: [
+            [{
+                field: 'ck',
+                checkbox: true
+            }, {
+                field: 'productid',
+                title: '编号',
+                width: 100,
+                align: 'center',
+                sortable: true
+            }, {
+                field: 'unitcost',
+                title: '单位',
+                width: 100,
+                align: 'center'
+            }, {
+                field: 'listprice',
+                title: '价格',
+                width: 100,
+                align: 'center'
+            }]
+        ]
+    });
+    </script>
+</body>
+
+</html>

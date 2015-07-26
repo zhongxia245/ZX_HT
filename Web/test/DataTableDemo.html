@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>表格生成DEMO</title>
+    <script type="text/javascript" src="../assets/js/zhongxia/loadAllCSS.js"></script>
+    <script type="text/javascript" src="../assets/js/zhongxia/zx_datatable.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function($) {
+        var config = {
+            "id": "#table",
+            "url": "../data/objects.txt",
+            "columns": [{
+                "text": "名称",
+                "data": "name"
+            }, {
+                "text": "位置",
+                "data": "position"
+            }, {
+                "text": "办公室",
+                "data": "office"
+            }, {
+                "text": "不懂",
+                "data": "extn"
+            }, {
+                "text": "不懂",
+                "data": "date5"
+            }]
+        };
+        var editConfig = [{
+            "data": "name",
+            "text": "复选",
+            "controlType": "date",
+            "validate":"required"
+        }, {
+            "data": "position",
+            "formType": "text",
+            "text": "文本框",
+            "controlType": "form",
+            "display":"none"
+        }, {
+            "data": "office",
+            "text": "是否",
+            "controlType": "form"
+        }, {
+            "data": "extn",
+            "formType": "password",
+            "text": "密码",
+            "controlType": "form",
+            "colspan": 3
+        }, {
+            "data": "date5",
+            "text": "内容",
+            "controlType": "ueditor",
+            "value":"这个是一个..."//,
+           // "height":200
+            //"display":"none"
+
+        }];
+        zx_datatable.init(config, editConfig);
+    });
+    </script>
+</head>
+
+<body>
+    <table id="table" onselectstart="return false;"></table>
+</body>
+
+</html>

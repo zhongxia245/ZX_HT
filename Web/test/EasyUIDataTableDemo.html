@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EasyUI表格Demo</title>
+    <link rel="stylesheet" type="text/css" href="../assets/js/zhongxia/loadAllCSS.js">
+    <link rel="stylesheet" type="text/css" href="../assets/js/plugin/easyui/themes/bootstrap/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../assets/js/plugin/easyui/themes/icon.css">
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugin/easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../assets/js/plugin/easyui/locale/easyui-lang-zh_CN.js"></script>
+</head>
+
+<body>
+    <table id="table" width="50%" height="300px"></table>
+    <div id="add_w"></div>
+    <hr/>
+    <table id="dg" onselectstart="return false;" class="easyui-datagrid" style="width:1000px;height:350px" data-options="singleSelect:true,
+    rownumbers:true,
+    pagination:true,
+    selectOnCheck:false,
+    checkOnSelect:false,
+    singleSelect:true,
+    toolbar:'#tb',
+    striped:true,
+    fitColumns:true,
+    url:'../assets/js/plugin/easyui/demo/datagrid/datagrid_data1.json',
+    method:'get'">
+        <thead>
+            <tr>
+                <th data-options="field:'ck',checkbox:true"></th>
+                <th data-options="field:'productid',width:100">Product</th>
+                <th data-options="field:'listprice',width:80,align:'right'">List Price</th>
+                <th data-options="field:'unitcost',width:80,align:'right'">Unit Cost</th>
+                <th data-options="field:'attr1',width:250">Attribute</th>
+                <th data-options="field:'status',width:60,align:'center'">Status</th>
+            </tr>
+        </thead>
+    </table>
+    <div id="tb" style="padding:2px 5px;">
+        <div>
+            Date From:
+            <input class="easyui-datebox" style="width:80px"> To:
+            <input class="easyui-datebox" style="width:80px"> Language:
+            <input class="easyui-combobox" style="width:100px" url="../assets/js/plugin/easyui/data/combobox_data.json" valueField="id" textField="text">
+            <a href="#" class="easyui-linkbutton" iconCls="icon-search">Search</a>
+        </div>
+        <div style="margin-bottom:5px">
+            <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true">添加</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true">编辑</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true">删除</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function($) {
+        $('#table').datagrid({
+            url: '../assets/js/plugin/easyui/demo/datagrid/datagrid_data1.json',
+            method: 'get',
+            rownumbers: true,
+            pagination: true,
+            selectOnCheck: false,
+            checkOnSelect: false,
+            singleSelect: true,
+            //toolbar: '#tb',
+            //remoteSort:false,
+            striped: true,
+            fitColumns: true,
+            columns: [
+                [{
+                    "field": 'ck',
+                    "checkbox": true
+                }, {
+                    "field": 'productid',
+                    "title": '编号',
+                    "width": 100,
+                    "align": 'center',
+                    "sortable":true
+                }, {
+                    field: 'unitcost',
+                    title: '单位',
+                    width: 100,
+                    align: 'center'
+                }, {
+                    field: 'listprice',
+                    title: '价格',
+                    width: 100,
+                    align: 'center'
+                }]
+            ],
+            toolbar: [{
+                id: 'btnadd',
+                text: '添加',
+                iconCls: 'icon-add',
+                handler: function() {
+                    $('#add_w').dialog({
+                        width: 600,
+                        height: 400,
+                        modal: true,
+                        title: "添加页面",
+                        maximizable: false,
+                        minimizable: false,
+                        buttons: [{
+                            text: "保存",
+                            handler: function() {
+                                alert("保存")
+                            }
+                        }, {
+                            text: "重置",
+                            handler: function() {
+                                alert("重置")
+                            }
+                        }]
+                    });
+                }
+            }, {
+                id: 'btnedit',
+                text: '编辑',
+                iconCls: 'icon-remove',
+                handler: function() {
+                    $('#add_w').dialog({
+                        width: 600,
+                        height: 400,
+                        modal: true,
+                        title: "编辑页面",
+                        maximizable: false,
+                        minimizable: false
+                    });
+                }
+            }, {
+                id: 'btnremove',
+                text: '删除',
+                iconCls: 'icon-add',
+                handler: function() {
+                    $.messager.confirm('确认', '您确认想要删除记录吗？', function(r) {
+                        if (r) {
+                            alert('确认删除');
+                        }
+                    });
+                }
+            }],
+            onDblClickRow: function() {
+                $('#add_w').dialog({
+                    width: 600,
+                    height: 400,
+                    modal: true,
+                    title: "编辑页面",
+                    maximizable: false,
+                    minimizable: false
+                });
+            }
+
+        });
+
+    });
+    </script>
+</body>
+
+</html>

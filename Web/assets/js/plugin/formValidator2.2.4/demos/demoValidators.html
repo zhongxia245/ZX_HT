@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Validation Engine 表单验证中文版 &raquo; 在线演示 &raquo; 各类规则验证 - 前端开发仓库</title>
+    <link rel="stylesheet" href="../css/validationEngine.jquery.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <script src="../js/jquery-1.6.min.js"></script>
+    <script src="../js/jquery.validationEngine.min.js"></script>
+    <script>
+    jQuery(document).ready(function() {
+        // binds form submission and fields to the validation engine
+        jQuery("#formID").validationEngine({
+            scroll: true,
+            focusFirstField: true
+        });
+    });
+
+    /**
+     *
+     * @param {jqObject} the field where the validation applies
+     * @param {Array[String]} validation rules for this field
+     * @param {int} rule index
+     * @param {Map} form options
+     * @return an error string if validation failed
+     */
+    function checkHELLO(field, rules, i, options) {
+        if (field.val() != "HELLO") {
+            // this allows to use i18 for the error msgs
+            //return options.allrules.validate2fields.alertText;
+            return "请输入 HELLO";
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <p class="demo_bar">
+        <a href="javascript://" onclick="alert('is the form valid? '+jQuery('#formID').validationEngine('validate'))">验证表单</a>
+        <a href="javascript://" onclick="jQuery('#test').validationEngine('validateField','#sport')">验证单个控件</a>
+        <a href="javascript://" onclick="jQuery('#sport').validationEngine('hide')">关闭单个控件的提示</a>
+        <a href="javascript://" onclick="jQuery('#formID').validationEngine('hide')">关闭表单中的所有提示</a>
+        <a href="javascript://" onclick="jQuery('#formID').validationEngine('updatePromptsPosition')">更新所有提示的位置</a>
+        <a href="javascript://" onclick="jQuery('#test').validationEngine('showPrompt','This is an example','pass')">给元素创建提示</a>
+        <a href="javascript://" onclick="jQuery('#test').validationEngine('hide')">关闭元素的提示</a>
+        <a href="../index.html">返回首页</a>
+    </p>
+    <div class="demo_wrap">
+        <div class="demo_tips">
+            <p>示例：演示不同类型的验证</p>
+            <div id="test" class="test" style="width:150px;">这是一个 DIV 元素</div>
+        </div>
+        <form id="formID" class="formular" method="post" action="">
+            <fieldset>
+                <legend>Required</legend>
+                <label for="req">必填项目：</label>
+                <input value="" class="validate[required] text-input" type="text" name="req" id="req" />
+                <label for="sport">最喜欢的运动 1：</label>
+                <select name="sport" id="sport" class="validate[required]">
+                    <option value="">请选择</option>
+                    <option value="option1">网球</option>
+                    <option value="option2">足球</option>
+                    <option value="option3">高尔夫球</option>
+                </select>
+                <label for="sport2">最喜欢的运动 2：</label>
+                <select name="sport2" id="sport2" multiple class="validate[required]">
+                    <option value="">请选择</option>
+                    <option value="option1">网球</option>
+                    <option value="option2">足球</option>
+                    <option value="option3">高尔夫球</option>
+                </select>
+                <code>validate[required]</code>
+            </fieldset>
+            <fieldset>
+                <legend>Custom</legend>
+                <p>自定的正则验证（电话、URL、IP、Email 等）<a href="demoRegExp.html">[更多示例]</a></p>
+                <label for="url">输入 URL 地址：</label>
+                <input value="http://" class="validate[required,custom[url]] text-input" type="text" name="url" id="url" />
+                <code>validate[required,custom[url]]</code>
+            </fieldset>
+            <fieldset>
+                <legend>Equals</legend>
+                <label for="password">密码：</label>
+                <input value="karnius" class="validate[required] text-input" type="password" name="password" id="password" />
+                <label for="password2">确认密码：</label>
+                <input value="kaniusBAD" class="validate[required,equals[password]] text-input" type="password" name="password2" id="password2" />
+                <code>validate[required,equals[password]]</code>
+            </fieldset>
+            <fieldset>
+                <legend>Function</legend>
+                <label for="lastname">输入“HELLO”：</label>
+                <input class="validate[required,funcCall[checkHELLO]] text-input" type="text" id="lastname" name="lastname" />
+                <code>validate[required,funcCall[checkHELLO]]</code>
+            </fieldset>
+            <fieldset>
+                <legend>MinSize</legend>
+                <label for="minsize">最少输入6个字符</label>
+                <input class="validate[required,minSize[6]] text-input" type="text" name="minsize" id="minsize" />
+                <code>validate[required,minSize[6]]</code>
+            </fieldset>
+            <fieldset>
+                <legend>MaxSize</legend>
+                <label for="maxsize">最多输入6个字符</label>
+                <input value="0123456789" class="validate[optional,maxSize[6]] text-input" type="text" name="maxsize" id="maxsize" />
+                <code>validate[maxSize[6]]</code>
+                <p>注：这是可选的。（我们也可以使用 maxlength 属性来限制）</p>
+            </fieldset>
+            <fieldset>
+                <legend>Min</legend>
+                <label for="min">最小值 >= -5</label>
+                <input value="-7" class="validate[required,custom[integer],min[-5]] text-input" type="text" name="min" id="min" />
+                <code>validate[required,custom[integer],min[-5]]</code>
+            </fieldset>
+            <fieldset>
+                <legend>Max</legend>
+                <label for="max">最大值
+                    <=5 0</label>
+                        <input value="55" class="validate[required,custom[integer],max[50]] text-input" type="text" name="max" id="max" />
+                        <code>validate[required,custom[integer],max[50]]</code>
+            </fieldset>
+            <fieldset>
+                <legend>Past</legend>
+                <label for="past">检查当前值是否小于指定的日期，请输入 2010/01/01 之后的日期</label>
+                <input value="2009/06/30" class="validate[custom[date],past[2010/01/01]] text-input" type="text" name="past" id="past" />
+                <code>validate[custom[date],past[2010/01/01]]</code>
+            </fieldset>
+            <fieldset>
+                <legend>Future</legend>
+                <label for="future">检查当前值是否大于指定的日期，请输入今天之前的日期</label>
+                <input value="2011-01-" class="validate[custom[date],future[NOW]] text-input" type="text" name="future" id="future" />
+                <code>validate[custom[date],future[NOW]]</code>
+            </fieldset>
+            <fieldset>
+                <legend>Group Required</legend>
+                <p>指定一个组别，至少填写或选择其中一项</p>
+                <label for="creditcard1">输入信用卡号</label>
+                <input value="" class="validate[groupRequired[payments]] text-input" type="text" name="creditcard1" id="creditcard1" />
+                <label for="paypal"><strong>或者</strong> 输入支付宝账号</label>
+                <input value="" class="validate[groupRequired[payments],custom[email]] text-input" type="text" name="paypal" id="paypal" />
+                <label for="bank"><strong>或者</strong> 输入银行账号</label>
+                <input value="" class="validate[groupRequired[payments],custom[integer]] text-input" type="text" name="bank" id="bank" />
+                <label for="bank2"><strong>或者</strong> 从这里选择一项</label>
+                <select class="validate[groupRequired[payments]] text-input" type="text" name="bank2" id="bank2">
+                    <option value="">选择付款方式</option>
+                    <option value="Paypal">支付宝</option>
+                    <option value="Bank">银行汇款</option>
+                </select>
+                <code>validate[groupRequired[payments]]</code>
+                <p>注：组别名必须一致</p>
+            </fieldset>
+            <fieldset>
+                <legend>Date Range</legend>
+                <p>验证开始日期和结束日期是否正确</p>
+                <label for="date1">开始日期：</label>
+                <input value="9/1/2009" class="validate[dateRange[grp1]] text-input" type="text" id="date1" />
+                <label for="date2">结束日期：</label>
+                <input value="3/18/1985" class="validate[dateRange[grp1]] text-input" type="text" id="date2" />
+                <code>validate[dateRange[grp1]]</code>
+                <p>注：两个的组别名必须一致</p>
+            </fieldset>
+            <fieldset>
+                <legend>Date Time Range</legend>
+                <p>验证开始日期（及时间）和结束日期（及时间）是否正确</p>
+                <label for="datetime1">开始时间：</label>
+                <input value="9/1/2009 9:30:00 PM" class="validate[dateTimeRange[grp2]] text-input" type="text" id="datetime1" />
+                <label for="datetime2">结束时间：</label>
+                <input value="9/1/2009 2:30:00 AM" class="validate[dateTimeRange[grp2]] text-input" type="text" id="datetime2" />
+                <code>validate[dateTimeRange[grp2]</code>
+                <p>注：两个的组别名必须一致</p>
+            </fieldset>
+            <fieldset>
+                <legend>Checkbox</legend>
+                <p>查看单选框和多选框的 <a href="demoCheckBox.html">[示例]</a></p>
+            </fieldset>
+            <fieldset>
+                <legend>Ajax</legend>
+                <p>查看 Ajax 的 <a href="demoAjaxSubmitPHP.html">[示例]</a></p>
+            </fieldset>
+            <input class="submit" type="submit" value="验证 & 提交表单" />
+        </form>
+    </div>
+</body>
+
+</html>

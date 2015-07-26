@@ -1,0 +1,40 @@
+************************************begin***********************************
+2015-06-05 11:08:52,252 [4516] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Exception: SQLite error
+no such table: temp
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperSQLite.Query(String SQLString, SQLiteParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperSQLite.cs:行号 425
+   在 StrongSoftManage.IBatisDAO.IBatisDAOSqlite.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOSqlite.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\c71ea0d9\f70d96b6\App_Web_cxhdykx0.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-06-05 11:27:17,853 [4736] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpUnhandledException (0x80004005): 引发类型为“System.Web.HttpUnhandledException”的异常。 ---> System.Exception: SQLite error
+no such table: temp
+   在 StrongSoftManage.IBatisDAO.DBUtility.DbHelperSQLite.Query(String SQLString, SQLiteParameter[] cmdParms) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO.DBUtility\DbHelperSQLite.cs:行号 425
+   在 StrongSoftManage.IBatisDAO.IBatisDAOSqlite.GetDataSet(String method, Object param) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\zhongxia.IBatisDAO\IBatisDAOSqlite.cs:行号 66
+   在 Web._Default.Page_Load(Object sender, EventArgs e) 位置 F:\库\Desktop\IBatis封装（支持5中数据库）\源码解析\Web\Default.aspx.cs:行号 16
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.default_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\c71ea0d9\f70d96b6\App_Web_jhuwqnbl.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

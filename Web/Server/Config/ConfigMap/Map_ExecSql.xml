@@ -1,0 +1,79 @@
+﻿<?xml version="1.0"?>
+<sqlMap xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        namespace="Map_ExecSql">
+  <statements>
+    <!--获取测试的数据-->
+    <select id="GetTb_Test">
+      <![CDATA[
+				select * from TEST
+         where 1 =1 
+			]]>
+      <isNotEmpty prepend="And" property="name">
+        <![CDATA[
+          name = #name#
+        ]]>
+      </isNotEmpty>
+      <isNotEmpty prepend="And" property="tel">
+        <![CDATA[
+          tel like '%'+ #tel# +'%'
+        ]]>
+      </isNotEmpty>
+    </select>
+
+    <!--插入数据-->
+    <select id="Add">
+      <![CDATA[
+				INSERT DBO.TEST( NAME ,PASSWORD , TEL ,ROLEID ,BIRTHDAY ,CREATETIME)
+        VALUES  (#Name# ,#Password# , #Tel# ,#RoleID# ,#Birthday# ,#CreateTime# )
+        SELECT @@IDENTITY AS MAXID
+			]]>
+    </select>
+
+    <!--插入数据-->
+    <select id="Update">
+      <![CDATA[
+        UPDATE dbo.TEST
+        SET Name=#Name#,PASSWORD=#Password#,TEL=#Tel#,ROLEID=#RoleID#,BIRTHDAY=#Birthday#,CREATETIME=#CreateTime#
+        WHERE ID = #ID#
+        select 'true' as RESULT
+			]]>
+    </select>
+
+    <!--获取主表配置-->
+    <select id="GetTB_TABLECONFIG">
+      <![CDATA[
+				SELECT * FROM dbo.TB_TABLECONFIG
+        where 1 =1 
+			]]>
+      <isNotEmpty prepend="And" property="DBNAME">
+        <![CDATA[
+          DBNAME = #DBNAME#
+        ]]>
+      </isNotEmpty>
+      <isNotEmpty prepend="And" property="TBNAME">
+        <![CDATA[
+           TBNAME = #TBNAME#
+        ]]>
+      </isNotEmpty>
+    </select>
+
+    <!--获取浮标配置-->
+    <select id="GetTB_TABLEFIELDCONFIG">
+      <![CDATA[
+				SELECT * FROM dbo.TB_TABLEFIELDCONFIG
+        where 1 =1 
+			]]>
+      <isNotEmpty prepend="And" property="TBID">
+        <![CDATA[
+          TBID = #TBID#
+        ]]>
+      </isNotEmpty>
+      <isNotEmpty prepend="And" property="FCODE">
+        <![CDATA[
+           FCODE = #FCODE#
+        ]]>
+      </isNotEmpty>
+    </select>
+  </statements>
+</sqlMap>
+

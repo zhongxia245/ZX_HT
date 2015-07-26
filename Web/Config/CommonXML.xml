@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="CommonXML" xmlns="http://ibatis.apache.org/mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+	<statements>
+		<!--根据Sql语句获取数据-->
+		<select id="ExcSQLByStrSql"  parameterClass="string">
+			<![CDATA[
+        select * from temp
+        ]]>
+		</select>
+
+		<update id="ExcUpdateSQLByStrSql" parameterClass="string">
+			<![CDATA[
+			 $value$
+			]]>
+		</update>
+		
+	</statements>
+</sqlMap>

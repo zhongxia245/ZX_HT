@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<appSettings>
+  <!--默认数据库类型 (可选项:ORACLE,MSSQL,OLEDB,MYSQL,SQLITE) -->
+  <add key="DBATYPE" value="MSSQL" />
+  <!--默认数据库(报表默认的ibatis数据库配置文件)-->
+  <!--<add key="DBConfig" value="Config/SqlMap_MSSQL.config" />-->
+</appSettings>

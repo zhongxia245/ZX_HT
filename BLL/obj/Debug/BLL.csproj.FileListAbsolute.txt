@@ -1,0 +1,15 @@
+F:\库\Desktop\通用后台维护\SVN完整版\BLL\bin\Debug\BLL.dll
+F:\库\Desktop\通用后台维护\SVN完整版\BLL\bin\Debug\BLL.pdb
+F:\库\Desktop\通用后台维护\SVN完整版\BLL\bin\Debug\Common.dll
+F:\库\Desktop\通用后台维护\SVN完整版\BLL\bin\Debug\Model.dll
+F:\库\Desktop\通用后台维护\SVN完整版\BLL\bin\Debug\zhongxia.IBatisDAO.dll
+F:\库\Desktop\通用后台维护\SVN完整版\BLL\bin\Debug\IBatisNet.DataMapper.dll
+F:\库\Desktop\通用后台维护\SVN完整版\BLL\bin\Debug\MySql.Data.dll
+F:\库\Desktop\通用后台维护\SVN完整版\BLL\bin\Debug\System.Data.SQLite.dll
+F:\库\Desktop\通用后台维护\SVN完整版\BLL\bin\Debug\log4net.dll
+F:\库\Desktop\通用后台维护\SVN完整版\BLL\bin\Debug\IBatisNet.Common.dll
+F:\库\Desktop\通用后台维护\SVN完整版\BLL\bin\Debug\Common.pdb
+F:\库\Desktop\通用后台维护\SVN完整版\BLL\bin\Debug\Model.pdb
+F:\库\Desktop\通用后台维护\SVN完整版\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+F:\库\Desktop\通用后台维护\SVN完整版\BLL\obj\Debug\BLL.dll
+F:\库\Desktop\通用后台维护\SVN完整版\BLL\obj\Debug\BLL.pdb

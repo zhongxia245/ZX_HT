@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>动态生成表格</title>
+    <script type="text/javascript" src="../assets/js/zhongxia/loadAllCSS.js"></script>
+    <style type="text/css">
+    .edit {
+        display: none;
+    }
+    
+    .table {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    </style>
+</head>
+
+<body style="height:100%;">
+    <div style="height:100%;">
+        <!-- 表格(表格的容器设置了100%的高度,然后表格设置属性 fit:true ,即可自适应父容器高度  2015-07-22) -->
+        <table class="table" id="table"></table>
+        <!-- 编辑页面 -->
+        <div id="tb_edit"></div>
+    </div>
+    <!-- 引入需要用的JS -->
+    <script type="text/javascript" src="../assets/js/zhongxia/zx_ALL.js"></script>
+    <script type="text/javascript">
+    /*页面加载完成触发*/
+    $(function($) {
+        //1. 获取表格配置参数生成表格
+        var tcid = getQueryString("TCID");
+
+        //2. 从数据库获取配置
+        var url = "../Server/AjaxHandler/CRUDHandler.ashx";
+        $.getJSON(url, {
+            TCID: tcid
+        }, function(json) {
+            var config = {}; //= json.TbConfig;
+            var editConfig = json.Columns;
+
+            var tbConfig = new Array();
+            tbConfig.push({
+                    "field": "ck",
+                    "checkbox": true,
+                    "width": 30
+                });
+                //处理数据
+            for (var i = 0; i < editConfig.length; i++) {
+                editConfig[i]["data"] = editConfig[i]["FCODE"];
+                editConfig[i]["controlType"] = editConfig[i]["CONTROLTYPE"];
+                editConfig[i]["formType"] = editConfig[i]["FORMTYPE"];
+                editConfig[i]["text"] = editConfig[i]["FNAME"];
+
+                var configItem = {};
+                configItem["field"] = editConfig[i]["FCODE"];
+                configItem["title"] = editConfig[i]["FNAME"];
+                configItem["width"] = 30;
+                configItem["align"] = "center";
+                tbConfig.push(configItem);
+            }
+            config["url"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=select&TCID=" + tcid;
+            config["url_add"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=insert&TCID=" + tcid;
+            config["url_update"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=update&TCID=" + tcid;
+            config["url_del"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=delete&TCID=" + tcid;
+            config["columns"] = [tbConfig];
+
+            zx_ALL.init("table", config, "tb_edit", editConfig);
+        });
+
+        // var config = parent.window.tableConfig[tcid];
+        // var editConfig = parent.window.tableFieldConfig[tcid];
+        // zx_ALL.init("table", config, "tb_edit", editConfig);
+    });
+    </script>
+</body>
+
+</html>
