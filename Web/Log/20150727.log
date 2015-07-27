@@ -279,3 +279,185 @@ System.Data.SqlClient.SqlException (0x80131904): ¹Ø¼ü×Ö 'ROWCOUNT' ¸½½üÓÐÓï·¨´íÎ
    ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
    ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
 ClientConnectionId:d5ed59fd-16be-45a1-bd0a-2d53cb4ccf60
+************************************begin***********************************
+2015-07-27 06:19:41,691 [8528] ERROR Web.Global [(null)] - ³ÌÐò·¢ÉúÎ´²¶»ñÒì³£
+System.Web.HttpException (0x80004005): ÎÄ¼þ²»´æÔÚ¡£
+   ÔÚ System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   ÔÚ System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   ÔÚ System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 06:19:43,815 [7612] ERROR Web.Global [(null)] - ³ÌÐò·¢ÉúÎ´²¶»ñÒì³£
+System.Web.HttpException (0x80004005): ÎÄ¼þ²»´æÔÚ¡£
+   ÔÚ System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   ÔÚ System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   ÔÚ System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 19:33:36,698 [7428] ERROR Web.Global [(null)] - ³ÌÐò·¢ÉúÎ´²¶»ñÒì³£
+System.Web.HttpException (0x80004005): ÎÄ¼þ²»´æÔÚ¡£
+   ÔÚ System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   ÔÚ System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   ÔÚ System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 19:33:40,659 [7528] ERROR Web.Global [(null)] - ³ÌÐò·¢ÉúÎ´²¶»ñÒì³£
+System.Web.HttpException (0x80004005): ÎÄ¼þ²»´æÔÚ¡£
+   ÔÚ System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   ÔÚ System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   ÔÚ System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 19:34:01,089 [7536] ERROR Web.Global [(null)] - ³ÌÐò·¢ÉúÎ´²¶»ñÒì³£
+System.Data.SqlClient.SqlException (0x80131904): ')' ¸½½üÓÐÓï·¨´íÎó¡£
+   ÔÚ zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   ÔÚ zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   ÔÚ zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   ÔÚ Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) Î»ÖÃ F:\¿â\Desktop\Í¨ÓÃºóÌ¨Î¬»¤\SVNÍêÕû°æ\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:ÐÐºÅ 112
+   ÔÚ Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) Î»ÖÃ F:\¿â\Desktop\Í¨ÓÃºóÌ¨Î¬»¤\SVNÍêÕû°æ\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:ÐÐºÅ 52
+   ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:1d1625db-94bf-4e62-a752-4cbe2fcaaf36
+************************************begin***********************************
+2015-07-27 19:50:26,413 [8432] ERROR Web.Global [(null)] - ³ÌÐò·¢ÉúÎ´²¶»ñÒì³£
+System.Web.HttpException (0x80004005): ÎÄ¼þ²»´æÔÚ¡£
+   ÔÚ System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   ÔÚ System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   ÔÚ System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 19:51:36,564 [4744] ERROR Web.Global [(null)] - ³ÌÐò·¢ÉúÎ´²¶»ñÒì³£
+System.Data.SqlClient.SqlException (0x80131904): ')' ¸½½üÓÐÓï·¨´íÎó¡£
+   ÔÚ zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   ÔÚ zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   ÔÚ zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   ÔÚ Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) Î»ÖÃ H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:ÐÐºÅ 112
+   ÔÚ Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) Î»ÖÃ H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:ÐÐºÅ 52
+   ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:899ab6e8-a4e6-4ed6-92c6-9ba7e38ad7a4
+************************************begin***********************************
+2015-07-27 19:59:50,194 [4640] ERROR Web.Global [(null)] - ³ÌÐò·¢ÉúÎ´²¶»ñÒì³£
+System.ArgumentOutOfRangeException: ³¤¶È²»ÄÜÐ¡ÓÚ 0¡£
+²ÎÊýÃû: length
+   ÔÚ System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   ÔÚ System.String.Substring(Int32 startIndex, Int32 length)
+   ÔÚ BLL.SYS_SQLCore._InitSQL_Insert(String TbName, List`1 Columns) Î»ÖÃ H:\github\ZX_HT\BLL\SYS_SQLCore.cs:ÐÐºÅ 87
+   ÔÚ BLL.SYS_SQLCore.initSQL() Î»ÖÃ H:\github\ZX_HT\BLL\SYS_SQLCore.cs:ÐÐºÅ 201
+   ÔÚ BLL.SYS_SQLCore..ctor(String tcid) Î»ÖÃ H:\github\ZX_HT\BLL\SYS_SQLCore.cs:ÐÐºÅ 58
+   ÔÚ Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) Î»ÖÃ H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:ÐÐºÅ 43
+   ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 20:01:07,081 [2612] ERROR Web.Global [(null)] - ³ÌÐò·¢ÉúÎ´²¶»ñÒì³£
+System.ArgumentOutOfRangeException: ³¤¶È²»ÄÜÐ¡ÓÚ 0¡£
+²ÎÊýÃû: length
+   ÔÚ System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   ÔÚ System.String.Substring(Int32 startIndex, Int32 length)
+   ÔÚ BLL.SYS_SQLCore._InitSQL_Insert(String TbName, List`1 Columns) Î»ÖÃ H:\github\ZX_HT\BLL\SYS_SQLCore.cs:ÐÐºÅ 87
+   ÔÚ BLL.SYS_SQLCore.initSQL() Î»ÖÃ H:\github\ZX_HT\BLL\SYS_SQLCore.cs:ÐÐºÅ 201
+   ÔÚ BLL.SYS_SQLCore..ctor(String tcid) Î»ÖÃ H:\github\ZX_HT\BLL\SYS_SQLCore.cs:ÐÐºÅ 58
+   ÔÚ Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) Î»ÖÃ H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:ÐÐºÅ 43
+   ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 20:01:56,215 [5480] ERROR Web.Global [(null)] - ³ÌÐò·¢ÉúÎ´²¶»ñÒì³£
+System.ArgumentOutOfRangeException: ³¤¶È²»ÄÜÐ¡ÓÚ 0¡£
+²ÎÊýÃû: length
+   ÔÚ System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   ÔÚ System.String.Substring(Int32 startIndex, Int32 length)
+   ÔÚ BLL.SYS_SQLCore._InitSQL_Insert(String TbName, List`1 Columns) Î»ÖÃ H:\github\ZX_HT\BLL\SYS_SQLCore.cs:ÐÐºÅ 87
+   ÔÚ BLL.SYS_SQLCore.initSQL() Î»ÖÃ H:\github\ZX_HT\BLL\SYS_SQLCore.cs:ÐÐºÅ 201
+   ÔÚ BLL.SYS_SQLCore..ctor(String tcid) Î»ÖÃ H:\github\ZX_HT\BLL\SYS_SQLCore.cs:ÐÐºÅ 58
+   ÔÚ Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) Î»ÖÃ H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:ÐÐºÅ 43
+   ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 20:07:50,438 [9088] ERROR Web.Global [(null)] - ³ÌÐò·¢ÉúÎ´²¶»ñÒì³£
+System.Web.HttpException (0x80004005): ÎÄ¼þ²»´æÔÚ¡£
+   ÔÚ System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   ÔÚ System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   ÔÚ System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-27 20:45:05,793 [7364] ERROR Web.Global [(null)] - ³ÌÐò·¢ÉúÎ´²¶»ñÒì³£
+System.Data.SqlClient.SqlException (0x80131904): ¹Ø¼ü×Ö 'WHERE' ¸½½üÓÐÓï·¨´íÎó¡£
+   ÔÚ System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   ÔÚ System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   ÔÚ System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   ÔÚ System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   ÔÚ System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout)
+   ÔÚ System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   ÔÚ System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   ÔÚ IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteNonQuery()
+   ÔÚ IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteUpdate(ISqlMapSession session, Object parameterObject)
+   ÔÚ IBatisNet.DataMapper.SqlMapper.Update(String statementName, Object parameterObject)
+   ÔÚ zhongxia.IBatisDAO.IIBatisDAO.ExecuteSql(String SQLString)
+   ÔÚ Web.Server.AjaxHandler.CRUDHandler.Update(HttpContext context) Î»ÖÃ H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:ÐÐºÅ 94
+   ÔÚ Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) Î»ÖÃ H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:ÐÐºÅ 51
+   ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:2d997631-e7bf-477b-a04e-2ca940df608f
+************************************begin***********************************
+2015-07-27 20:45:07,748 [2640] ERROR Web.Global [(null)] - ³ÌÐò·¢ÉúÎ´²¶»ñÒì³£
+System.Data.SqlClient.SqlException (0x80131904): ¹Ø¼ü×Ö 'WHERE' ¸½½üÓÐÓï·¨´íÎó¡£
+   ÔÚ System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   ÔÚ System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   ÔÚ System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   ÔÚ System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   ÔÚ System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout)
+   ÔÚ System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   ÔÚ System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   ÔÚ IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteNonQuery()
+   ÔÚ IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteUpdate(ISqlMapSession session, Object parameterObject)
+   ÔÚ IBatisNet.DataMapper.SqlMapper.Update(String statementName, Object parameterObject)
+   ÔÚ zhongxia.IBatisDAO.IIBatisDAO.ExecuteSql(String SQLString)
+   ÔÚ Web.Server.AjaxHandler.CRUDHandler.Update(HttpContext context) Î»ÖÃ H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:ÐÐºÅ 94
+   ÔÚ Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) Î»ÖÃ H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:ÐÐºÅ 51
+   ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:2d997631-e7bf-477b-a04e-2ca940df608f
+************************************begin***********************************
+2015-07-27 20:45:13,027 [8592] ERROR Web.Global [(null)] - ³ÌÐò·¢ÉúÎ´²¶»ñÒì³£
+System.Data.SqlClient.SqlException (0x80131904): ¹Ø¼ü×Ö 'WHERE' ¸½½üÓÐÓï·¨´íÎó¡£
+   ÔÚ System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   ÔÚ System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   ÔÚ System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   ÔÚ System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   ÔÚ System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout)
+   ÔÚ System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   ÔÚ System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   ÔÚ IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteNonQuery()
+   ÔÚ IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteUpdate(ISqlMapSession session, Object parameterObject)
+   ÔÚ IBatisNet.DataMapper.SqlMapper.Update(String statementName, Object parameterObject)
+   ÔÚ zhongxia.IBatisDAO.IIBatisDAO.ExecuteSql(String SQLString)
+   ÔÚ Web.Server.AjaxHandler.CRUDHandler.Update(HttpContext context) Î»ÖÃ H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:ÐÐºÅ 94
+   ÔÚ Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) Î»ÖÃ H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:ÐÐºÅ 51
+   ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:2d997631-e7bf-477b-a04e-2ca940df608f
+************************************begin***********************************
+2015-07-27 20:45:45,348 [7364] ERROR Web.Global [(null)] - ³ÌÐò·¢ÉúÎ´²¶»ñÒì³£
+System.Data.SqlClient.SqlException (0x80131904): ¹Ø¼ü×Ö 'WHERE' ¸½½üÓÐÓï·¨´íÎó¡£
+   ÔÚ System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   ÔÚ System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   ÔÚ System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   ÔÚ System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   ÔÚ System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout)
+   ÔÚ System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   ÔÚ System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   ÔÚ IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteNonQuery()
+   ÔÚ IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteUpdate(ISqlMapSession session, Object parameterObject)
+   ÔÚ IBatisNet.DataMapper.SqlMapper.Update(String statementName, Object parameterObject)
+   ÔÚ zhongxia.IBatisDAO.IIBatisDAO.ExecuteSql(String SQLString)
+   ÔÚ Web.Server.AjaxHandler.CRUDHandler.Update(HttpContext context) Î»ÖÃ H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:ÐÐºÅ 94
+   ÔÚ Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) Î»ÖÃ H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:ÐÐºÅ 51
+   ÔÚ System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   ÔÚ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:2d997631-e7bf-477b-a04e-2ca940df608f

@@ -69,13 +69,13 @@ namespace Web
                     ht_field.Add("TBSORT", i * 5 + 1);
                     ht_field.Add("EDITSORT", i * 5 + 1);
                     ht_field.Add("DEFAULTVALUE", column._DEFAULT);
-                    ht_field.Add("ISDISPLAY", 0);
+                    ht_field.Add("ISDISPLAY", 1);
                     ht_field.Add("ISADD", 1);
                     ht_field.Add("ISUPDATE", 1);
                     ht_field.Add("ISSEARCH", 0);
-                    ht_field.Add("ISMUST", (column._ISPK != "" || column._ISIDENTITY != "") ? 1 : 0);
-                    ht_field.Add("ISPK", column._ISPK != "" ? 1 : 0);
-                    ht_field.Add("ISIDENTITY", column._ISIDENTITY != "" ? 1 : 0);
+                    ht_field.Add("ISMUST", (String.IsNullOrEmpty(column._ISIDENTITY) || String.IsNullOrEmpty(column._ISPK)) ? 0 : 1);
+                    ht_field.Add("ISPK", String.IsNullOrEmpty(column._ISPK) ? 0 : 1);
+                    ht_field.Add("ISIDENTITY", String.IsNullOrEmpty(column._ISIDENTITY) ? 0 : 1);
                     IBatisUitls.DAO.GetSingle("Tb_TableFieldConfig.Add", ht_field);
                 }
                 IBatisUitls.DAO.CommitTransaction();

@@ -25,10 +25,10 @@ namespace Web
             Gridview2.DataBind();
             //BLL.SYS_SQL sqls = new BLL.SYS_SQL(tbName);
             BLL.SYS_SQLCore sqls = new BLL.SYS_SQLCore(TCID.Text);
-            var sql = sqls.SQL_Select + "</br></br>"
-                + sqls.SQL_Update + "</br></br>"
-                + sqls.SQL_Insert + "</br></br>"
-                + sqls.SQL_Delete;
+            var sql = sqls.GetSQL_Select() + "</br></br>"
+                + sqls.GetSQL_Insert() + "</br></br>"
+                + sqls.GetSQL_Delete() + "</br></br>"
+                + sqls.GetSQL_Update();
             Response.Write(sql);
         }
 

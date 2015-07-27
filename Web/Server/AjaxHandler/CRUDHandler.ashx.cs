@@ -64,7 +64,7 @@ namespace Web.Server.AjaxHandler
         /// <returns></returns>
         private string Insert(HttpContext context)
         {
-            var sql = crud.SQL_Insert;
+            var sql = crud.GetSQL_Insert();
             sql = crud.ReplacePlaceHolder(sql, ht);
             var json = DAO.ExecuteSql(sql);
             return json + "";
@@ -77,7 +77,7 @@ namespace Web.Server.AjaxHandler
         /// <returns></returns>
         private string Delete(HttpContext context)
         {
-            var sql = crud.SQL_Delete;
+            var sql = crud.GetSQL_Delete();
             sql = crud.ReplacePlaceHolder(sql, ht);
             var json = DAO.ExecuteSql(sql);
             return json + "";
@@ -89,7 +89,7 @@ namespace Web.Server.AjaxHandler
         /// <returns></returns>
         private string Update(HttpContext context)
         {
-            var sql = crud.SQL_Update;
+            var sql = crud.GetSQL_Update();
             sql = crud.ReplacePlaceHolder(sql, ht);
             var json = DAO.ExecuteSql(sql);
             return json + "";
@@ -102,7 +102,7 @@ namespace Web.Server.AjaxHandler
         /// <returns></returns>
         private string Select(HttpContext context)
         {
-            var sql = crud.SQL_Select;
+            var sql = crud.GetSQL_Select();
             var page = Int32.Parse(ht["PAGE"] == null ? "1" : ht["PAGE"].ToString());
             var pageSize = Int32.Parse(ht["ROWS"] == null ? "999999" : ht["ROWS"].ToString());
             var htParam = new Hashtable();

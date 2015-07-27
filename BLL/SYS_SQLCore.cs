@@ -28,10 +28,11 @@ namespace BLL
         /// 主表信息
         /// </summary>
         public TB_TABLECONFIG TbConfig { get; set; }
-        public string SQL_Select { get; set; }
-        public string SQL_Insert { get; set; }
-        public string SQL_Update { get; set; }
-        public string SQL_Delete { get; set; }
+
+        private string _SQL_Select;
+        private string _SQL_Insert;
+        private string _SQL_Update;
+        private string _SQL_Delete;
 
         /// <summary>
         /// 获取主表配置信息的SQL语句 KEY
@@ -70,8 +71,8 @@ namespace BLL
         {
             var sql = @"INSERT INTO {0}({1}) VALUES({2}) ";
 
-            var fields = "";  //字段集合   ID,Name...
-            var paramField = ""; //IBatis字段参数形式 #ID#,"Name"....
+            var fields = " ";  //字段集合   ID,Name...
+            var paramField = " "; //IBatis字段参数形式 #ID#,"Name"....
 
             //遍历字段,生成字段集合
             foreach (var column in Columns)
@@ -99,7 +100,7 @@ namespace BLL
         {
             var sql = "UPDATE {0} SET {1} WHERE {2} IN (#{2}#)";
             var pk_field = "";  //主键
-            var updateFields = "";  //更新字段   ID=#ID#,Name=#Name#...
+            var updateFields = " ";  //更新字段   ID=#ID#,Name=#Name#...
             //遍历字段,生成字段集合
             foreach (var column in Columns)
             {
@@ -123,7 +124,7 @@ namespace BLL
         /// <returns></returns>
         private string _InitDelSQL(string TbName, string pk_Filed)
         {
-            var sql = "DELETE {0} WHERE {1} IN (#{1}#)";
+            var sql = "DELETE {0} WHERE {1} IN (${1}$)";
             sql = String.Format(sql, TbName, pk_Filed);
             return sql;
         }
@@ -137,13 +138,21 @@ namespace BLL
         {
             //生成查询语句
             var sql = "SELECT {0} FROM {1}";
-            var fields = "";
+            var fields = " ";
             //遍历字段,生成字段集合
-            foreach (var column in Columns)
-                fields += column.FCODE + ",";
-            fields = fields.Substring(0, fields.Length - 1);
+            if (Columns != null)
+            {
+                foreach (var column in Columns)
+                    fields += column.FCODE + ",";
+                fields = fields.Substring(0, fields.Length - 1);
 
-            sql = String.Format(sql, fields, TbName);
+                sql = String.Format(sql, fields, TbName);
+            }
+            else
+            {
+                sql = String.Format(sql, "*", TbName);
+            }
+
 
             //有排序字段,则进行排序
             if (orderField != null)
@@ -185,25 +194,30 @@ namespace BLL
             if (Columns.Count > 0)
             {
                 //查询的SQL语句(有自定义的SQL语句,以自定义的为主)
-                if (!String.IsNullOrEmpty(TbConfig.SELECTSQL)) this.SQL_Select = TbConfig.SELECTSQL;
-                //else this.SQL_Select = _InitSQL_Select(TbConfig.TBCODE, TbConfig.SORTFIELD, Columns);
-                else this.SQL_Select = _InitSQL_Select(TbConfig.TBCODE, null, Columns);
+                if (!String.IsNullOrEmpty(TbConfig.SELECTSQL)) this._SQL_Select = TbConfig.SELECTSQL;
+                else this._SQL_Select = _InitSQL_Select(TbConfig.TBCODE, null, Columns);
 
                 //添加的SQL语句
-                if (!String.IsNullOrEmpty(TbConfig.INSERTSQL)) this.SQL_Select = TbConfig.INSERTSQL;
-                else this.SQL_Insert = _InitSQL_Insert(TbConfig.TBCODE, Columns);
+                if (!String.IsNullOrEmpty(TbConfig.INSERTSQL)) this._SQL_Insert = TbConfig.INSERTSQL;
+                else this._SQL_Insert = _InitSQL_Insert(TbConfig.TBCODE, Columns);
 
                 //修改的SQL语句
-                if (!String.IsNullOrEmpty(TbConfig.UPDATESQL)) this.SQL_Select = TbConfig.UPDATESQL;
-                else this.SQL_Update = _InitSQL_Update(TbConfig.TBCODE, Columns);
+                if (!String.IsNullOrEmpty(TbConfig.UPDATESQL)) this._SQL_Update = TbConfig.UPDATESQL;
+                else this._SQL_Update = _InitSQL_Update(TbConfig.TBCODE, Columns);
 
                 //删除的SQL语句
-                if (!String.IsNullOrEmpty(TbConfig.DELETESQL)) this.SQL_Select = TbConfig.DELETESQL;
+                if (!String.IsNullOrEmpty(TbConfig.DELETESQL)) this._SQL_Delete = TbConfig.DELETESQL;
                 else
                 {
                     var pk_Filed = GetPk_Field(Columns);
-                    this.SQL_Delete = _InitDelSQL(TbConfig.TBCODE, pk_Filed);
+                    this._SQL_Delete = _InitDelSQL(TbConfig.TBCODE, pk_Filed);
                 }
+            }
+            else
+            {
+                //查询的SQL语句(有自定义的SQL语句,以自定义的为主)
+                if (!String.IsNullOrEmpty(TbConfig.SELECTSQL)) this._SQL_Select = TbConfig.SELECTSQL;
+                else this._SQL_Select = _InitSQL_Select(TbConfig.TBCODE, null, null);
             }
             #endregion 3.2 初始化SQL语句
         }
@@ -237,13 +251,50 @@ namespace BLL
         {
             foreach (var item in ht.Keys)
             {
+                //如果是 #  号标识的字段, 则在值得首尾加上引号
                 var key = "#" + item + "#";
                 sql = sql.Replace(key, "'" + ht[item].ToString() + "'");
+                //如果是用$符号占位,则只把值替换进去
+                var key_dollor = "$" + item + "$";
+                sql = sql.Replace(key_dollor, ht[item].ToString());
             }
             return sql;
         }
+
+        /// <summary>
+        /// 返回查询语句
+        /// </summary>
+        /// <returns></returns>
+        public string GetSQL_Select() {
+            return this._SQL_Select;
+        }
+
+        /// <summary>
+        /// 返回查询语句
+        /// </summary>
+        /// <returns></returns>
+        public string GetSQL_Delete()
+        {
+            return this._SQL_Delete;
+        }
+
+        /// <summary>
+        /// 返回查询语句
+        /// </summary>
+        /// <returns></returns>
+        public string GetSQL_Insert()
+        {
+            return this._SQL_Insert;
+        }
+
+        /// <summary>
+        /// 返回查询语句
+        /// </summary>
+        /// <returns></returns>
+        public string GetSQL_Update()
+        {
+            return this._SQL_Update;
+        }
         #endregion
-
-
     }
 }

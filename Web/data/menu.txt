@@ -5,7 +5,7 @@
                 "children": [{
                     "title": "测试表1",
                     "fontIcon": "&#xe005;",
-                    "url": "TableDemo.html?TCID=1"
+                    "url": "TableDemo.html?TCID=16"
                 }, {
                     "title": "分类管理",
                     "fontIcon": "&#xe006;",
@@ -13,7 +13,7 @@
                 }, {
                     "title": "留言管理",
                     "fontIcon": "&#xe004;",
-                    "url": "TableDemo.html?TCID=3"
+                    "url": "TableDemo.html?TCID=13"
                 }, {
                     "title": "评论管理",
                     "fontIcon": "&#xe012;",

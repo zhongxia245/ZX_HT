@@ -2,3 +2,7 @@ F:\库\Desktop\通用后台维护\SVN完整版\Common\bin\Debug\Common.dll
 F:\库\Desktop\通用后台维护\SVN完整版\Common\bin\Debug\Common.pdb
 F:\库\Desktop\通用后台维护\SVN完整版\Common\obj\Debug\Common.dll
 F:\库\Desktop\通用后台维护\SVN完整版\Common\obj\Debug\Common.pdb
+H:\github\ZX_HT\Common\bin\Debug\Common.dll
+H:\github\ZX_HT\Common\bin\Debug\Common.pdb
+H:\github\ZX_HT\Common\obj\Debug\Common.dll
+H:\github\ZX_HT\Common\obj\Debug\Common.pdb
