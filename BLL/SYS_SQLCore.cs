@@ -10,7 +10,7 @@ namespace BLL
 {
     /// <summary>
     /// 核心类
-    /// 1. 生成表的增删改查语句
+    /// 1. 动态生成表的增删改查语句
     /// 2. 获取表的配置信息
     /// </summary>
     public class SYS_SQLCore
