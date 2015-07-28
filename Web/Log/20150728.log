@@ -1,0 +1,204 @@
+************************************begin***********************************
+2015-07-28 20:33:01,269 [6200] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-28 20:33:02,267 [11624] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-28 20:37:05,649 [10684] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpException (0x80004005): 文件不存在。
+   在 System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   在 System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-28 20:47:28,511 [11816] ERROR Web.Global [(null)] - 程序发生未捕获异常
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected with type 'System.Collections.Generic.List`1[System.Object]'. Path 'tableConfig.columns'.
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeDictionary(JsonWriter writer, IDictionary values, JsonDictionaryContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   在 Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   在 Newtonsoft.Json.JsonConvert.SerializeObject(Object value, Type type, Formatting formatting, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.SerializeObject(Object value, Formatting formatting, JsonConverter[] converters)
+   在 Newtonsoft.Json.JsonConvert.SerializeObject(Object value, JsonConverter[] converters)
+   在 Web.Server.Utility.JsonHelper.Encode(Object o) 位置 H:\github\ZX_HT\Web\Server\Utility\JsonHelper.cs:行号 31
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-28 20:49:42,209 [12560] ERROR Web.Global [(null)] - 程序发生未捕获异常
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected with type 'System.Collections.Generic.List`1[System.Object]'. Path 'tableConfig.columns'.
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeDictionary(JsonWriter writer, IDictionary values, JsonDictionaryContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   在 Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   在 Newtonsoft.Json.JsonConvert.SerializeObject(Object value, Type type, Formatting formatting, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.SerializeObject(Object value, Formatting formatting, JsonConverter[] converters)
+   在 Newtonsoft.Json.JsonConvert.SerializeObject(Object value, JsonConverter[] converters)
+   在 Web.Server.Utility.JsonHelper.Encode(Object o) 位置 H:\github\ZX_HT\Web\Server\Utility\JsonHelper.cs:行号 31
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 52
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-28 21:01:40,653 [11400] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpException (0x80004005): 不允许用于访问路径“/html/TableDemo.html”的 HTTP 谓词 POST。
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-28 21:01:42,015 [13124] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpException (0x80004005): 不允许用于访问路径“/html/TableDemo.html”的 HTTP 谓词 POST。
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-28 21:02:05,785 [13496] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpException (0x80004005): 不允许用于访问路径“/html/TableDemo.html”的 HTTP 谓词 POST。
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-28 21:02:50,241 [12764] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpException (0x80004005): 不允许用于访问路径“/html/TableDemo.html”的 HTTP 谓词 POST。
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-28 21:09:37,234 [13480] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Web.HttpException (0x80004005): 不允许用于访问路径“/html/TableDemo.html”的 HTTP 谓词 POST。
+   在 System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-28 22:31:48,094 [17448] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.ArgumentOutOfRangeException: 长度不能小于 0。
+参数名: length
+   在 System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 BLL.ConfigProxy.ConfigProxy_V1.TFConfig2Column(TB_TABLEFIELDCONFIG tfconfig) 位置 H:\github\ZX_HT\BLL\ConfigProxy\ConfigProxy_V1.cs:行号 134
+   在 BLL.ConfigProxy.ConfigProxy_V1.Proxy_TableFieldConfig() 位置 H:\github\ZX_HT\BLL\ConfigProxy\ConfigProxy_V1.cs:行号 98
+   在 BLL.ConfigProxy.ConfigProxy_V1.Proxy2Web() 位置 H:\github\ZX_HT\BLL\ConfigProxy\ConfigProxy_V1.cs:行号 34
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 46
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-28 22:31:54,002 [19428] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.ArgumentOutOfRangeException: 长度不能小于 0。
+参数名: length
+   在 System.String.InternalSubStringWithChecks(Int32 startIndex, Int32 length, Boolean fAlwaysCopy)
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 BLL.ConfigProxy.ConfigProxy_V1.TFConfig2Column(TB_TABLEFIELDCONFIG tfconfig) 位置 H:\github\ZX_HT\BLL\ConfigProxy\ConfigProxy_V1.cs:行号 134
+   在 BLL.ConfigProxy.ConfigProxy_V1.Proxy_TableFieldConfig() 位置 H:\github\ZX_HT\BLL\ConfigProxy\ConfigProxy_V1.cs:行号 98
+   在 BLL.ConfigProxy.ConfigProxy_V1.Proxy2Web() 位置 H:\github\ZX_HT\BLL\ConfigProxy\ConfigProxy_V1.cs:行号 34
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 46
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+************************************begin***********************************
+2015-07-28 22:46:44,910 [17448] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 116
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 56
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:1729f92a-44ba-4897-8f2d-56e56742c92e
+************************************begin***********************************
+2015-07-28 23:10:12,157 [22208] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 116
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 56
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:1729f92a-44ba-4897-8f2d-56e56742c92e
+************************************begin***********************************
+2015-07-28 23:11:01,066 [22424] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 116
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 56
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:cd57acb5-f8e0-4b54-b9ba-c8f678fec97e
+************************************begin***********************************
+2015-07-28 23:11:07,205 [22356] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 116
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 56
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:cd57acb5-f8e0-4b54-b9ba-c8f678fec97e
+************************************begin***********************************
+2015-07-28 23:11:56,935 [21868] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 116
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 56
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:cd57acb5-f8e0-4b54-b9ba-c8f678fec97e
+************************************begin***********************************
+2015-07-28 23:12:09,401 [22208] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 116
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 56
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:cd57acb5-f8e0-4b54-b9ba-c8f678fec97e
+************************************begin***********************************
+2015-07-28 23:13:10,484 [20004] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 116
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 56
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:cd57acb5-f8e0-4b54-b9ba-c8f678fec97e
+************************************begin***********************************
+2015-07-28 23:13:46,713 [22208] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): ')' 附近有语法错误。
+   在 zhongxia.IBatisDAO.DBUtility.DbHelperSQL.Query(String SQLString, SqlParameter[] cmdParms)
+   在 zhongxia.IBatisDAO.IBatisDAOMSSQL.GetDataSet(String method, Object param)
+   在 zhongxia.IBatisDAO.IIBatisDAO.GetDataTable(String method, Object param)
+   在 Web.Server.AjaxHandler.CRUDHandler.Select(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 116
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 56
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:cd57acb5-f8e0-4b54-b9ba-c8f678fec97e

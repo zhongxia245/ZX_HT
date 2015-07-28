@@ -20,11 +20,11 @@ namespace BLL.ConfigProxy
         /// 解析成前端需要的格式
         /// </summary>
         /// <returns></returns>
-        public abstract SYS_SQLCore Proxy2Web();
+        public abstract object Proxy2Web();
         /// <summary>
         /// 解析成服务端需要的格式
         /// </summary>
         /// <returns></returns>
-        public abstract SYS_SQLCore Proxy2HT();
+        public abstract object Proxy2HT();
     }
 }

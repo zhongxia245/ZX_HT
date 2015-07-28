@@ -41,11 +41,15 @@ namespace Web.Server.AjaxHandler
             if (tcid != "")
             {
                 crud = new BLL.SYS_SQLCore(tcid);
+                //解析服务端的数据称前端需要的格式
+                var proxy = new BLL.ConfigProxy.ConfigProxy_V1(crud);
+                var config = proxy.Proxy2Web();
+
                 var action = IsNull(ht["ACTION"]).ToLower();
                 action = action == "" ? "config" : action;  //默认获取配置信息
                 switch (action)
                 {
-                    case "config": json = JsonHelper.Encode(crud); break;
+                    case "config": json = JsonHelper.Encode(config); break;
                     case "insert": json = Insert(context); break;
                     case "delete": json = Delete(context); break;
                     case "update": json = Update(context); break;

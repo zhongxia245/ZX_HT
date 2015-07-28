@@ -2,18 +2,19 @@
             "prefixId": "item",
             "data": [{
                 "title": "表格生成",
-                "children": [{
-                    "title": "测试表1",
+                "children": [
+                {
+                    "title": "主表管理",
+                    "fontIcon": "&#xe004;",
+                    "url": "TableDemo.html?TCID=13"
+                },{
+                    "title": "附表管理",
                     "fontIcon": "&#xe005;",
-                    "url": "TableDemo.html?TCID=16"
+                    "url": "TableDemo.html?TCID=18"
                 }, {
                     "title": "分类管理",
                     "fontIcon": "&#xe006;",
                     "url": "TableDemo.html?TCID=12"
-                }, {
-                    "title": "留言管理",
-                    "fontIcon": "&#xe004;",
-                    "url": "TableDemo.html?TCID=13"
                 }, {
                     "title": "评论管理",
                     "fontIcon": "&#xe012;",

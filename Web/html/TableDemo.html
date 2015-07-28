@@ -38,36 +38,36 @@
         $.getJSON(url, {
             TCID: tcid
         }, function(json) {
-            var config = {}; //= json.TbConfig;
-            var editConfig = json.Columns;
+            var tableConfig = json.tableConfig; 
+            var tableFieldConfig = json.tableFieldConfig;
+            console.log(json);
+            // var tbConfig = new Array();
+            // tbConfig.push({
+            //         "field": "ck",
+            //         "checkbox": true,
+            //         "width": 30
+            //     });
+            //     //处理数据
+            // for (var i = 0; i < editConfig.length; i++) {
+            //     editConfig[i]["data"] = editConfig[i]["FCODE"];
+            //     editConfig[i]["controlType"] = editConfig[i]["CONTROLTYPE"];
+            //     editConfig[i]["formType"] = editConfig[i]["FORMTYPE"];
+            //     editConfig[i]["text"] = editConfig[i]["FNAME"];
 
-            var tbConfig = new Array();
-            tbConfig.push({
-                    "field": "ck",
-                    "checkbox": true,
-                    "width": 30
-                });
-                //处理数据
-            for (var i = 0; i < editConfig.length; i++) {
-                editConfig[i]["data"] = editConfig[i]["FCODE"];
-                editConfig[i]["controlType"] = editConfig[i]["CONTROLTYPE"];
-                editConfig[i]["formType"] = editConfig[i]["FORMTYPE"];
-                editConfig[i]["text"] = editConfig[i]["FNAME"];
+            //     var configItem = {};
+            //     configItem["field"] = editConfig[i]["FCODE"];
+            //     configItem["title"] = editConfig[i]["FNAME"];
+            //     configItem["width"] = 30;
+            //     configItem["align"] = "center";
+            //     tbConfig.push(configItem);
+            // }
+            // config["url"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=select&TCID=" + tcid;
+            // config["url_add"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=insert&TCID=" + tcid;
+            // config["url_update"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=update&TCID=" + tcid;
+            // config["url_del"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=delete&TCID=" + tcid;
+            // config["columns"] = [tbConfig];
 
-                var configItem = {};
-                configItem["field"] = editConfig[i]["FCODE"];
-                configItem["title"] = editConfig[i]["FNAME"];
-                configItem["width"] = 30;
-                configItem["align"] = "center";
-                tbConfig.push(configItem);
-            }
-            config["url"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=select&TCID=" + tcid;
-            config["url_add"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=insert&TCID=" + tcid;
-            config["url_update"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=update&TCID=" + tcid;
-            config["url_del"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=delete&TCID=" + tcid;
-            config["columns"] = [tbConfig];
-
-            zx_ALL.init("table", config, "tb_edit", editConfig);
+            zx_ALL.init("table", tableConfig, "tb_edit", tableFieldConfig);
         });
 
         // var config = parent.window.tableConfig[tcid];

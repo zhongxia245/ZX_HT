@@ -133,6 +133,7 @@
   color: #111;
   height: 16px;
   line-height: 16px;
+  text-align: center;
 }
 .panel-footer {
   border: 1px solid #D4D4D4;

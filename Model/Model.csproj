@@ -45,6 +45,8 @@
     <Compile Include="TB_TABLECONFIG.cs" />
     <Compile Include="TB_TABLEFIELDCONFIG.cs" />
     <Compile Include="Web_Column.cs" />
+    <Compile Include="Web_Table.cs" />
+    <Compile Include="Web_TableColumn.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

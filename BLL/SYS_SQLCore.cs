@@ -53,7 +53,7 @@ namespace BLL
         public SYS_SQLCore(String tcid)
         {
             this.TCID = tcid;
-            if (!String.IsNullOrEmpty(tcid))
+            if (!String.IsNullOrWhiteSpace(tcid))
             {
                 this.Columns = new List<TB_TABLEFIELDCONFIG>();
                 initSQL();
@@ -140,7 +140,7 @@ namespace BLL
             var sql = "SELECT {0} FROM {1}";
             var fields = " ";
             //遍历字段,生成字段集合
-            if (Columns != null)
+            if (Columns != null && Columns.Count != 0)
             {
                 foreach (var column in Columns)
                     fields += column.FCODE + ",";
@@ -194,19 +194,19 @@ namespace BLL
             if (Columns.Count > 0)
             {
                 //查询的SQL语句(有自定义的SQL语句,以自定义的为主)
-                if (!String.IsNullOrEmpty(TbConfig.SELECTSQL)) this._SQL_Select = TbConfig.SELECTSQL;
+                if (!String.IsNullOrWhiteSpace(TbConfig.SELECTSQL)) this._SQL_Select = TbConfig.SELECTSQL;
                 else this._SQL_Select = _InitSQL_Select(TbConfig.TBCODE, null, Columns);
 
                 //添加的SQL语句
-                if (!String.IsNullOrEmpty(TbConfig.INSERTSQL)) this._SQL_Insert = TbConfig.INSERTSQL;
+                if (!String.IsNullOrWhiteSpace(TbConfig.INSERTSQL)) this._SQL_Insert = TbConfig.INSERTSQL;
                 else this._SQL_Insert = _InitSQL_Insert(TbConfig.TBCODE, Columns);
 
                 //修改的SQL语句
-                if (!String.IsNullOrEmpty(TbConfig.UPDATESQL)) this._SQL_Update = TbConfig.UPDATESQL;
+                if (!String.IsNullOrWhiteSpace(TbConfig.UPDATESQL)) this._SQL_Update = TbConfig.UPDATESQL;
                 else this._SQL_Update = _InitSQL_Update(TbConfig.TBCODE, Columns);
 
                 //删除的SQL语句
-                if (!String.IsNullOrEmpty(TbConfig.DELETESQL)) this._SQL_Delete = TbConfig.DELETESQL;
+                if (!String.IsNullOrWhiteSpace(TbConfig.DELETESQL)) this._SQL_Delete = TbConfig.DELETESQL;
                 else
                 {
                     var pk_Filed = GetPk_Field(Columns);
@@ -216,7 +216,7 @@ namespace BLL
             else
             {
                 //查询的SQL语句(有自定义的SQL语句,以自定义的为主)
-                if (!String.IsNullOrEmpty(TbConfig.SELECTSQL)) this._SQL_Select = TbConfig.SELECTSQL;
+                if (!String.IsNullOrWhiteSpace(TbConfig.SELECTSQL)) this._SQL_Select = TbConfig.SELECTSQL;
                 else this._SQL_Select = _InitSQL_Select(TbConfig.TBCODE, null, null);
             }
             #endregion 3.2 初始化SQL语句
@@ -265,7 +265,8 @@ namespace BLL
         /// 返回查询语句
         /// </summary>
         /// <returns></returns>
-        public string GetSQL_Select() {
+        public string GetSQL_Select()
+        {
             return this._SQL_Select;
         }
 

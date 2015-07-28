@@ -36,27 +36,27 @@ document.write('<script type="text/javascript" src="../assets/js/plugin/formVali
  *  var tableFiledConfig =  [{"data":"date","text":"日期(年月日)","controlType":"date"},{"data":"name","formType":"datetime","text":"复选","controlType":"form"},{"data":"position","formType":"text","text":"文本框","controlType":"form"},{"data":"office","text":"是否","controlType":"form"},{"data":"extn","formType":"password","text":"密码","controlType":"form","colspan":3},{"data":"date5","text":"内容","controlType":"ueditor"}]
  **********************************************************/
 var zx_EditPage = (function() {　　　 //注意:UEditor.根目录是最后请求的资源的路径,所以'umeditor','zh-cn','umeditor.config' 位置如下　
-    var td = '<td style="text-align:right; padding:5px;">{{=it.text}}</td><td rowspan="{{=it.rowspan}}" colspan="{{=it.colspan}}">';
+    var td = '<td style="text-align:right; padding:5px;">{{=it.title}}</td><td rowspan="{{=it.rowspan}}" colspan="{{=it.colspan}}">';
     //默认的控件类型模板
     var defaultsTemplate = {
         /*表单*/
-        'form': td + '<input class="validate[{{=it.validate}}]" style="width:{{=it.width}}px;height:{{=it.height}}px; {{=it.style}} " id="{{=it.data}}" type="{{=it.formType}}" name={{=it.data}} value="{{=it.value}}"/>' + '</td>',
+        'form': td + '<input class="validate[{{=it.validate}}]" style="width:{{=it.width}}px;height:{{=it.height}}px; {{=it.style}} " id="{{=it.field}}" type="{{=it.formType}}" name={{=it.field}} value="{{=it.value}}"/>' + '</td>',
         /*富文本框*/
-        'ueditor': td + '<script id="{{=it.data}}" name={{=it.data}}  class="validate[{{=it.validate}}]" type="text/plain" style="width:{{=it.width}}px;height:{{=it.height}}px; {{=it.style}}" >{{=it.value}}</script>' + '</td>',
+        'ueditor': td + '<script id="{{=it.field}}" name={{=it.field}}  class="validate[{{=it.validate}}]" type="text/plain" style="width:{{=it.width}}px;height:{{=it.height}}px; {{=it.style}}" >{{=it.value}}</script>' + '</td>',
         /*日期*/
-        'date': td + '<input id="{{=it.data}}" name={{=it.data}}  class="validate[{{=it.validate}}] Wdate" style="width:{{=it.width}}px;height:{{=it.height}}px; {{=it.style}}" type="text" onClick="WdatePicker()"/>' + '</td>',
+        'date': td + '<input id="{{=it.field}}" name={{=it.field}}  class="validate[{{=it.validate}}] Wdate" style="width:{{=it.width}}px;height:{{=it.height}}px; {{=it.style}}" type="text" onClick="WdatePicker()"/>' + '</td>',
         /*时间*/
-        'datetime': td + '<input id="{{=it.data}}" name={{=it.data}} class="validate[{{=it.validate}}] Wdate" style="width:{{=it.width}}px;height:{{=it.height}}px; {{=it.style}}"  type="text" onClick="WdatePicker({dateFmt:\'yyyy-MM-dd HH:mm:ss\'})"/>' + '</td>',
+        'datetime': td + '<input id="{{=it.field}}" name={{=it.field}} class="validate[{{=it.validate}}] Wdate" style="width:{{=it.width}}px;height:{{=it.height}}px; {{=it.style}}"  type="text" onClick="WdatePicker({dateFmt:\'yyyy-MM-dd HH:mm:ss\'})"/>' + '</td>',
         /*是否*/
-        'yesno': td + '<label><input type="radio" value="1" name={{=it.data}} />是</label><label><input type="radio" value="0" name={{=it.data}} />否</label>' + '</td>'
+        'yesno': td + '<label><input type="radio" value="1" name={{=it.field}} />是</label><label><input type="radio" value="0" name={{=it.field}} />否</label>' + '</td>'
     };
 
     //默认的控件配置
     var defaultConfig = {
-        "data": "Edit_Id", //控件的ID,数据的字段
+        "field": "Edit_Id", //控件的ID,数据的字段
         "formType": "text", //表单类型
         "controlType": "form", //控件类型
-        "text": "中文字段名", //字段中文名
+        "title": "中文字段名", //字段中文名
         "value": "", //默认值
         "width": 160, //控件宽
         "height": 20, //控件高
@@ -79,39 +79,6 @@ var zx_EditPage = (function() {　　　 //注意:UEditor.根目录是最后请�
         return controlTypes[controlType] || "";
     };
 
-    /*
-        生成一个单元格(td),需指定添加这个单元格的位置,以及控件配置 [目前没用到]
-        把生成的模板,添加到指定的ID下  add("#test / body / .class",{data:"name"})
-        @param selector 添加到的容器
-        @param config   单个字段的配置,JSON对象
-    */
-    var add = function(selector, config) {
-        //根据不同的类型,设置宽高
-        if (config.controlType == "ueditor") { //富文本框,默认宽600,高150
-            config.width = config.width || 600;
-            config.height = config.height || 150;
-            config.colspan = config.colspan || 3;
-        }
-        if (config.formType == "radio" || config.formType == "checkbox") { //单选框,复选框: 默认宽18  高:无
-            config.width = config.width || 18;
-            config.height = config.height || ""
-        }
-
-        //合并参数(后面两个,合并到第一个空对象里面)
-        config = $.extend({}, defaultConfig, config);
-
-        //获取模板文件(doT模板)
-        var tpl = getTemplate(config.controlType);
-
-        //单选,复选框,则需要在后面加上  单选,复选的名称
-        if (config.formType == "radio" || config.formType == "checkbox") tpl += config.text;
-
-        //如果是富文本框的话,需要实例化富文本框
-        $(selector).append(doT.template(tpl)(config));
-        if (config.controlType == "ueditor") UM.getEditor(config.data);
-
-        return doT.template(tpl)(config);
-    };
 
     /*
         添加编辑页面
@@ -129,7 +96,7 @@ var zx_EditPage = (function() {　　　 //注意:UEditor.根目录是最后请�
             rowSpanCount = 0;
 
         for (var i = 0; i < columns.length; i++) {
-            if (columns[i].controlType == "ueditor") ueditorArray.push(columns[i].data); //记录下富文本字段,等生成HTMl之后,要实例化
+            if (columns[i].controlType == "ueditor") ueditorArray.push(columns[i].field); //记录下富文本字段,等生成HTMl之后,要实例化
             if (rowSpanCount == 0) html += "<tr>";
 
             var tpl = getTemplate(columns[i].controlType);
@@ -190,7 +157,7 @@ var zx_EditPage = (function() {　　　 //注意:UEditor.根目录是最后请�
         columns = _fn_configHandler(columns); //对配置信息进行处理(去除不显示的字段)
         rowData = rowData || {};
         for (var i = 0; i < columns.length; i++) {
-            var fieldCode = columns[i].data;
+            var fieldCode = columns[i].field;
             var value = rowData[fieldCode] || "";
             var $control = $("#" + fieldCode);
 
@@ -213,7 +180,7 @@ var zx_EditPage = (function() {　　　 //注意:UEditor.根目录是最后请�
         columns = _fn_configHandler(_columns); //对配置信息进行处理(去除不显示的字段)
         var editData = {};
         for (var i = 0; i < columns.length; i++) {
-            var fieldCode = columns[i].data;
+            var fieldCode = columns[i].field;
             var $control = $("#" + fieldCode);
             var value = "";
             if (columns[i].controlType == "ueditor") {
@@ -251,7 +218,6 @@ var zx_EditPage = (function() {　　　 //注意:UEditor.根目录是最后请�
     /*匿名对象对外提供的参数*/
     return {
         options: options,
-        add: add,
         addEdit: addEdit,
         setEditValue: setEditValue,
         getEditValue: getEditValue,
@@ -277,7 +243,7 @@ var zx_EasyUIDataTable = (function(plugin_edit) {
         columns: undefined, //DataGrid列配置对象，详见列属性说明中更多的细节。
         frozenColumns: undefined, //同列属性，但是这些列将会被冻结在左侧。
         fit: true, //自适应父容器宽度(父容器必须设置宽高)
-        fitColumns: true, //真正的自动展开/收缩列的大小，以适应网格的宽度，防止水平滚动。
+        //fitColumns: true, //真正的自动展开/收缩列的大小，以适应网格的宽度，防止水平滚动。
         title: '<a href="./index.html">首页</a> &gt <span>表格生成</span> &gt <span>用户表<span>',
         resizeHandle: 'right', //调整列的位置，可用的值有：'left','right','both'。在使用'right'的时候用户可以通过拖动右侧边缘的列标题调整列，等等。（该属性自1.3.2版开始可用）
         autoRowHeight: false, //定义设置行的高度，根据该行的内容。设置为false可以提高负载性能。
@@ -395,18 +361,20 @@ var zx_EasyUIDataTable = (function(plugin_edit) {
                     var delIds = "";
                     for (var i = 0; i < rows.length; i++) {
                         var row = rows[i];
-                        delIds += row["ID"]+",";
-                        
+                        delIds += row["ID"] + ",";
+
                         //var index = $('#' + tbId).datagrid('getRowIndex', row);
                         //$('#' + tbId).datagrid('deleteRow', index);  //删除一行
                     }
-                    delIds = delIds.substr(0,delIds.length-1);
+                    delIds = delIds.substr(0, delIds.length - 1);
                     console.log(delIds);
                     var url = tbConfig.url_del;
-                     $.post(url, {ID:delIds}, function(json) {
+                    $.post(url, {
+                        ID: delIds
+                    }, function(json) {
 
                         reloadData(); //重新加载表格数据
-                     });
+                    });
                 }
             });
         }
@@ -431,6 +399,10 @@ var zx_EasyUIDataTable = (function(plugin_edit) {
             maximizable: false,
             minimizable: false,
             collapsible: true,
+            onBeforeClose: function() { //关闭窗体之前做的操作
+                $("#tb_EditForm").validationEngine('hide'); //隐藏验证提示
+                $("#tb_EditForm").validationEngine("detach"); //关闭验证
+            },
             buttons: [{
                 text: btn_text,
                 handler: function(e) {
@@ -470,12 +442,12 @@ var zx_EasyUIDataTable = (function(plugin_edit) {
     /*保存/添加*/
     var fn_Save = function(e, flag) {
         var url = "";
-        
-        if (flag == _addSign) url = tbConfig.url_add ;
-        else url = tbConfig.url_update ;
-        
+
+        if (flag == _addSign) url = tbConfig.url_add;
+        else url = tbConfig.url_update;
+
         var data = plugin_edit.getEditValue();
-        
+
         $.post(url, data, function(json) {
             if (flag == _addSign) { //添加
                 $.messager.confirm('温馨提示', '添加成功,是否继续添加?', function(r) {
