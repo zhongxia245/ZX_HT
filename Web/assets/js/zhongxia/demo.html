@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>表格Demo</title>
+</head>
+
+<body>
+    <h2>Table Demo</h2>
+    <div id="tb_edit" style="display:none;"></div>
+    <table id="tb">表格</table>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="ZX.Table.js"></script>
+    <script type="text/javascript" src="Form/ZX.Form.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function($) {
+        //1. 获取表格配置参数生成表格
+        var tcid = 16;
+
+        //2. 从数据库获取配置
+        var url = "/Server/AjaxHandler/CRUDHandler.ashx";
+        $.getJSON(url, {
+            TCID: tcid
+        }, function(json) {
+            var tableConfig = json.tableConfig;
+            var tableFieldConfig = json.tableFieldConfig;
+            console.log(json);
+            $.fn.ZX.Table.init('#tb', tableConfig, '#tb_edit', $.fn.ZX.Form);
+
+            //编辑页面在弹窗的时候加载,富文本编辑器才可以编辑
+            var config = {
+                form: {
+                    id: "form1",
+                    method: "POST",
+                    action: ""
+                },
+                items: [{
+                    controlId: 100, //文本框
+                    id: "1",
+                    colTitle: "姓名"
+                }, {
+                    controlId: 100, //文本框
+                    id: "2",
+                    colTitle: "密码"
+                }, {
+                    controlId: 102, //下拉框
+                    id: "3",
+                    colTitle: "科目",
+                    items: [{
+                        text: "语文",
+                        value: "chinese"
+                    }, {
+                        text: "数学",
+                        value: "math"
+                    }, {
+                        text: "英语",
+                        value: "english"
+                    }]
+                }, {
+                    controlId: 103, //单选框
+                    id: "4",
+                    colTitle: "科目",
+                    items: [{
+                        text: "语文",
+                        value: "chinese"
+                    }, {
+                        text: "数学",
+                        value: "math"
+                    }, {
+                        text: "英语",
+                        value: "english"
+                    }]
+                }, {
+                    controlId: 104, //复选框
+                    id: "5",
+                    colTitle: "科目",
+                    items: [{
+                        text: "语文",
+                        value: "chinese"
+                    }, {
+                        text: "数学",
+                        value: "math"
+                    }, {
+                        text: "英语",
+                        value: "english"
+                    }]
+                }, {
+                    controlId: 101, //textarea
+                    id: "6",
+                    //cols: 20,
+                    //rows: 10,
+                    colspan: 3
+                }, {
+                    controlId: 200, //datetime  日期
+                    id: "7"
+                }, {
+                    controlId: 201, //datetime 时间
+                    id: "8"
+                }, {
+                    controlId: 202, //kindeditor
+                    id: "9",
+                    colspan: 3
+                }]
+            };
+            $('#tb_edit').createForm(config);
+        });
+
+    });
+    </script>
+</body>
+
+</html>

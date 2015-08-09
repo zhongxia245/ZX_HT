@@ -1,0 +1,59 @@
+************************************begin***********************************
+2015-07-29 20:32:45,597 [15628] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): 将截断字符串或二进制数据。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteNonQuery()
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteUpdate(ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.Update(String statementName, Object parameterObject)
+   在 zhongxia.IBatisDAO.IIBatisDAO.ExecuteSql(String SQLString)
+   在 Web.Server.AjaxHandler.CRUDHandler.Update(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 98
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 55
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:7c3f43ec-aa4b-4043-918b-8fad26676f66
+************************************begin***********************************
+2015-07-29 20:32:48,289 [15620] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): 将截断字符串或二进制数据。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteNonQuery()
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteUpdate(ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.Update(String statementName, Object parameterObject)
+   在 zhongxia.IBatisDAO.IIBatisDAO.ExecuteSql(String SQLString)
+   在 Web.Server.AjaxHandler.CRUDHandler.Update(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 98
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 55
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:7c3f43ec-aa4b-4043-918b-8fad26676f66
+************************************begin***********************************
+2015-07-29 20:33:00,923 [15628] ERROR Web.Global [(null)] - 程序发生未捕获异常
+System.Data.SqlClient.SqlException (0x80131904): 列名 '#ID#' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 IBatisNet.DataMapper.Commands.DbCommandDecorator.System.Data.IDbCommand.ExecuteNonQuery()
+   在 IBatisNet.DataMapper.MappedStatements.MappedStatement.ExecuteUpdate(ISqlMapSession session, Object parameterObject)
+   在 IBatisNet.DataMapper.SqlMapper.Update(String statementName, Object parameterObject)
+   在 zhongxia.IBatisDAO.IIBatisDAO.ExecuteSql(String SQLString)
+   在 Web.Server.AjaxHandler.CRUDHandler.Update(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 98
+   在 Web.Server.AjaxHandler.CRUDHandler.ProcessRequest(HttpContext context) 位置 H:\github\ZX_HT\Web\Server\AjaxHandler\CRUDHandler.ashx.cs:行号 55
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:7c3f43ec-aa4b-4043-918b-8fad26676f66

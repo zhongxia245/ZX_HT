@@ -300,7 +300,7 @@ var zx_EasyUIDataTable = (function(plugin_edit) {
 
     var editId = "tb_edit"; //编辑页面ID
     var tbId; //表格ID
-    var _dg;
+    var _dg;   //表格对象
     var tbConfig;
 
     /*=================定义变量 END===================*/

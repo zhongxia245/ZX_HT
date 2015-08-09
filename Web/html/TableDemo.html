@@ -23,7 +23,7 @@
         <!-- 表格(表格的容器设置了100%的高度,然后表格设置属性 fit:true ,即可自适应父容器高度  2015-07-22) -->
         <table class="table" id="table"></table>
         <!-- 编辑页面 -->
-        <div id="tb_edit"></div>
+        <div id="tb_edit">a</div>
     </div>
     <!-- 引入需要用的JS -->
     <script type="text/javascript" src="../assets/js/zhongxia/zx_ALL.js"></script>
@@ -41,38 +41,8 @@
             var tableConfig = json.tableConfig; 
             var tableFieldConfig = json.tableFieldConfig;
             console.log(json);
-            // var tbConfig = new Array();
-            // tbConfig.push({
-            //         "field": "ck",
-            //         "checkbox": true,
-            //         "width": 30
-            //     });
-            //     //处理数据
-            // for (var i = 0; i < editConfig.length; i++) {
-            //     editConfig[i]["data"] = editConfig[i]["FCODE"];
-            //     editConfig[i]["controlType"] = editConfig[i]["CONTROLTYPE"];
-            //     editConfig[i]["formType"] = editConfig[i]["FORMTYPE"];
-            //     editConfig[i]["text"] = editConfig[i]["FNAME"];
-
-            //     var configItem = {};
-            //     configItem["field"] = editConfig[i]["FCODE"];
-            //     configItem["title"] = editConfig[i]["FNAME"];
-            //     configItem["width"] = 30;
-            //     configItem["align"] = "center";
-            //     tbConfig.push(configItem);
-            // }
-            // config["url"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=select&TCID=" + tcid;
-            // config["url_add"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=insert&TCID=" + tcid;
-            // config["url_update"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=update&TCID=" + tcid;
-            // config["url_del"] = "../Server/AjaxHandler/CRUDHandler.ashx?action=delete&TCID=" + tcid;
-            // config["columns"] = [tbConfig];
-
             zx_ALL.init("table", tableConfig, "tb_edit", tableFieldConfig);
         });
-
-        // var config = parent.window.tableConfig[tcid];
-        // var editConfig = parent.window.tableFieldConfig[tcid];
-        // zx_ALL.init("table", config, "tb_edit", editConfig);
     });
     </script>
 </body>

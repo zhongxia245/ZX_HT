@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>创建表单</title>
+    <!-- <link rel="stylesheet" href="plugin\formValidator2.2.4\css\validationEngine.jquery.css"> -->
+    <style type="text/css">
+    body {
+        font-family: Microsoft YaHei;
+        font-size: 12px;
+    }
+    
+    #container {
+        margin-top: 10px;
+        float: left;
+        width: 40%;
+    }
+    
+    #container1 {
+        margin-top: 10px;
+        float: right;
+        width: 40%;
+    }
+    </style>
+</head>
+
+<body>
+    <button onclick="check('form1');">验证表单1</button>
+    <button onclick="check('form2');">验证表单2</button>
+    <div id="container">Demo</div>
+    <div id="container1">Demo2</div>
+    <script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+    <!-- <script type="text/javascript" src="requireJS/require.min.js" defer async="true" data-main="js/main"></script> -->
+    <!-- <script type="text/javascript" src="plugin/My97DatePicker/WdatePicker.js"></script> -->
+    <script type="text/javascript" src="ZX.Form.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function($) {
+        var config = {
+            form: {
+                id: "form1",
+                method: "POST",
+                action: ""
+            },
+            items: [{
+                controlId: 100, //文本框
+                id: "1",
+                colTitle: "姓名"
+            }, {
+                controlId: 100, //文本框
+                id: "2",
+                colTitle: "密码"
+            }, {
+                controlId: 102, //下拉框
+                id: "3",
+                colTitle: "科目",
+                items: [{
+                    text: "语文",
+                    value: "chinese"
+                }, {
+                    text: "数学",
+                    value: "math"
+                }, {
+                    text: "英语",
+                    value: "english"
+                }]
+            }, {
+                controlId: 103, //单选框
+                id: "4",
+                colTitle: "科目",
+                items: [{
+                    text: "语文",
+                    value: "chinese"
+                }, {
+                    text: "数学",
+                    value: "math"
+                }, {
+                    text: "英语",
+                    value: "english"
+                }]
+            }, {
+                controlId: 104, //复选框
+                id: "5",
+                colTitle: "科目",
+                items: [{
+                    text: "语文",
+                    value: "chinese"
+                }, {
+                    text: "数学",
+                    value: "math"
+                }, {
+                    text: "英语",
+                    value: "english"
+                }]
+            }, {
+                controlId: 101, //textarea
+                id: "6",
+                cols: 50,
+                rows: 10,
+                colspan: 3
+            }, {
+                controlId: 200, //datetime  日期
+                id: "7"
+            }, {
+                controlId: 201, //datetime 时间
+                id: "8"
+            }, {
+                controlId: 202, //kindeditor
+                id: "9",
+                colspan: 3
+            }, {
+                controlId: 202, //kindeditor
+                id: "10",
+                colspan: 3
+            }, {
+                controlId: 202, //kindeditor
+                id: "11",
+                colspan: 3
+            }, {
+                controlId: 202, //kindeditor
+                id: "12",
+                colspan: 3
+            }, {
+                controlId: 202, //kindeditor
+                id: "13",
+                colspan: 3
+            }, {
+                controlId: 202, //kindeditor
+                id: "14",
+                colspan: 3
+            }, {
+                controlId: 202, //kindeditor
+                id: "15",
+                colspan: 3
+            }, {
+                controlId: 202, //kindeditor
+                id: "16",
+                colspan: 3
+            }, {
+                controlId: 202, //kindeditor
+                id: "17",
+                colspan: 3
+            }, {
+                controlId: 202, //kindeditor
+                id: "18",
+                colspan: 3
+            }, {
+                controlId: 202, //kindeditor
+                id: "19",
+                colspan: 3
+            }, {
+                controlId: 202, //kindeditor
+                id: "20",
+                colspan: 3
+            }, {
+                controlId: 202, //kindeditor
+                id: "21",
+                colspan: 3
+            }]
+        };
+        $('#container').createForm(config);
+        var config2 = $.extend({}, config, {
+            form: {
+                id: "form2"
+            }
+        });
+        $('#container1').createForm(config2);
+    });
+
+    function check(id) {
+        //添加验证信息
+        $("#" + id).validationEngine('attach', { //添加上这个方法,就可以输入内容后,提示框没掉
+            scroll: true,
+            focusFirstField: true
+        });
+
+        if ($("#" + id).validationEngine('validate')) {
+            alert("验证通过")
+            var obj = $.fn.Form.getValue(id);
+            console.log(obj);
+            //$("#form1").submit();
+            return true;
+        }
+        return false;
+    }
+    </script>
+</body>
+
+</html>
